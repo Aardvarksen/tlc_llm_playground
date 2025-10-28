@@ -233,6 +233,95 @@ Claude summarizes current state + next step
 
 ---
 
+## 8. Session State Tracking Loop (Multi-Day Continuity)
+
+**The Pattern**:
+```
+Session Start
+  ↓
+Claude reads CURRENT STATE section in plan.md
+  ↓
+Gives re-entry briefing: where we are + next action
+  ↓
+Work on tasks (using TodoWrite for tracking)
+  ↓
+Complete discrete chunks → update plan.md checkboxes
+  ↓
+Session ending
+  ↓
+Claude updates CURRENT STATE section:
+  - Last completed: [what was just finished]
+  - Next action: [specific, actionable next step]
+  - Blockers: [any decisions/questions pending]
+  - Date: [YYYY-MM-DD]
+  ↓
+→ Tomorrow-Claude has clear starting point
+```
+
+**What Goes in CURRENT STATE**:
+```markdown
+## CURRENT STATE (Last Updated: 2025-10-28)
+
+**Last Completed**: Created state tracking loop documentation (CLAUDE.md + loops.md)
+**Next Action**: Create requirements.txt with dependencies: streamlit, fastapi, uvicorn, httpx, openai, python-multipart
+**Current Phase**: Phase 1 (Foundation & Cleanup) - Task 1.1 pending
+**Blockers**: None
+```
+
+**Good vs. Bad State Summaries**:
+
+✅ **Good** (specific, actionable):
+- "Create requirements.txt with these 5 dependencies: streamlit, fastapi..."
+- "Fix the JSON placeholder at queue_server.py:79 - needs model, messages, stream fields"
+- "Decide: Should queue use async background task or separate worker process?"
+
+❌ **Bad** (vague, unhelpful):
+- "Work on Phase 1" (which part?)
+- "Fix the queue server" (fix what specifically?)
+- "Continue where we left off" (where was that?)
+
+**When to Update CURRENT STATE**:
+
+**Trigger 1 - Natural Session End (Inferred)**:
+Claude detects session-ending phrases from Darrin:
+- "I'm off for the day" / "gotta go" / "done for now"
+- "I'll pick this up tomorrow" / "that's enough for today"
+- "Thanks, I'm good" / "I'm signing off"
+- Any goodbye phrasing
+
+**Trigger 2 - Major Milestones (Proactive)**:
+Claude offers to update when completing significant chunks:
+- "We just finished Phase 1.1. Let me update CURRENT STATE before we move on."
+- Helps train Darrin on documentation patterns
+- Creates natural "work cycle" boundaries
+
+**Trigger 3 - Explicit Request**:
+Darrin can request directly:
+- "Update current state" / "update plan.md"
+- Useful as backup if Claude misses a cue
+
+**Fallback for Abrupt Endings**:
+If session ends unexpectedly (connection drop, window closed):
+- Tomorrow-Claude won't have latest update
+- Collaborative "where were we?" exploration needed
+- Claude checks: git status, recent file edits, plan.md checkboxes
+- Together reconstruct what was completed
+
+**Other Updates During Session**:
+- **TodoWrite**: For immediate task tracking (ephemeral, within session)
+- **plan.md checkboxes**: When discrete tasks complete (permanent)
+- **CURRENT STATE**: At triggers above (for re-entry)
+
+**Why This Matters**:
+- Multi-day projects lose context fast
+- Tomorrow-Claude is a fresh instance with no memory
+- Tomorrow-Darrin may have forgotten specifics
+- Clear state = faster re-entry = less time lost to "where were we?"
+
+**When to Use**: Every single session - at start and end
+
+---
+
 ## Meta-Loop: Learning to Work with AI
 
 **The Overarching Pattern**:

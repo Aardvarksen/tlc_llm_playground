@@ -9,7 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # LM Studio Configuration
-LM_STUDIO_BASE_URL = os.getenv("LM_STUDIO_URL", "http://localhost:1234")
+# Base URL for OpenAI-compatible client (includes /v1 suffix)
+LM_STUDIO_BASE_URL = os.getenv("LM_STUDIO_URL", "http://localhost:1234/v1")
 LM_STUDIO_API_KEY = "lm_studio"  # LM Studio doesn't use real keys, this is just a placeholder
 
 # Available Models and Their Defaults

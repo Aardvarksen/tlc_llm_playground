@@ -11,6 +11,13 @@
 >    - **One Small Lesson**: [Quick reminder of the key concept for this phase]
 > 5. Ask: "Does this match where you remember being?"
 
+> **📍 STATE TRACKING FOR MULTI-DAY WORK:**
+> This project happens over multiple days. Leave clear breadcrumbs:
+> - **At Re-Entry**: Check the **CURRENT STATE** section at the top of `plan.md` for immediate next action
+> - **At Session End**: Update CURRENT STATE with what you finished + next action + date
+> - **During Work**: Use TodoWrite for immediate tasks, update plan.md checkboxes when completing discrete chunks
+> See [loops.md Loop 8](#) for full details.
+
 > **⚠️ START HERE FOR NEW WORK**: Before diving into code, read the ["Working with Darrin"](#working-with-darrin) section. Your primary role is to be the **Focus Keeper** - helping keep the spotlight on the end goal while managing ADHD-driven rabbit holes with gentle nudging.
 
 ## Project Overview

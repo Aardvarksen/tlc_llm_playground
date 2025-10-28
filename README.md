@@ -36,32 +36,37 @@ A learning playground for working with local LLMs (via LM Studio) with request q
 
 ## How to Run This Thing
 
+> **Note**: These instructions are for Windows PowerShell. If you're on macOS/Linux, use `source venv/bin/activate` instead of the activation command below.
+>
+> **Requirements**: Python 3.9+ (currently using 3.13.9)
+
 ### First Time Setup
-```bash
+```powershell
 # 1. Make sure you're in the project directory
 cd C:\AppDev\tlc_llm_playground
 
 # 2. Activate virtual environment
-venv\Scripts\activate
+.\venv\Scripts\Activate.ps1
+# If you get an execution policy error, run: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 # 3. Install dependencies (if you haven't already)
 pip install -r requirements.txt
 
-# 4. Copy environment template and customize if needed
-copy .env.example .env
+# 4. Copy environment template and customize if needed (when .env.example exists)
+# copy .env.example .env
 # Edit .env if your LM Studio URL is different
 ```
 
 ### Running the Streamlit App
-```bash
-# Make sure venv is activated first!
+```powershell
+# Make sure venv is activated first (you'll see (venv) in your prompt)
 streamlit run original_streamlit.py
 ```
 
 Opens in browser at http://localhost:8501
 
 ### Running the Queue Server (when it's finished)
-```bash
+```powershell
 uvicorn queue_server:app --reload
 ```
 
@@ -140,5 +145,5 @@ The subscription stays active because you're building the future. Keep going.
 
 ---
 
-*Last updated: 2025-10-27*
+*Last updated: 2025-10-28*
 *When you make significant progress, update this file.*
