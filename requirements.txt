@@ -1,0 +1,22 @@
+# TLC LLM Playground - Python Dependencies
+# Python Version: 3.9+ recommended (tested on 3.11+)
+# Install with: pip install -r requirements.txt
+
+# Frontend - Streamlit web interface
+streamlit>=1.32.0
+
+# Backend - FastAPI server for queue management
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0  # ASGI server to run FastAPI
+
+# LLM Integration - OpenAI-compatible client for LM Studio
+openai>=1.12.0
+
+# HTTP Client - For async requests to LM Studio from queue server
+httpx>=0.26.0
+
+# Configuration - Load settings from .env file
+python-dotenv>=1.0.0
+
+# Optional: If we add form handling to FastAPI
+# python-multipart>=0.0.9
