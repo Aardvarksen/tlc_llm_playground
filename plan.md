@@ -1,12 +1,12 @@
 # TLC LLM Playground - MVP Plan
 
-## CURRENT STATE (Last Updated: 2025-10-28)
+## CURRENT STATE (Last Updated: 2025-10-29)
 
-**Last Completed**: 🎉 **PHASE 2 COMPLETE** - Queue Server with full streaming support + LM Studio integration!
-**Next Action**: Start Phase 3 - Rebuild Streamlit app to use queue server instead of direct LM Studio calls
-**Current Phase**: Phase 1 ✅ | Phase 2 ✅ | Phase 3 (Integrate Frontend with Queue Server) - Ready to start
+**Last Completed**: 🎉 **PHASE 3.1 COMPLETE** - Created streamlit_v2.0.py that successfully uses queue server! Tested with 8 concurrent browser tabs. Fixed queue position feedback to show "Joined queue at position X, Y total generations in queue"
+**Next Action**: Consider Phase 3.2 (enhanced user feedback) or Phase 4 (code organization/refactoring)
+**Current Phase**: Phase 1 ✅ | Phase 2 ✅ | Phase 3.1 ✅ (Frontend now uses queue server)
 **Blockers**: None
-**Note**: Queue server fully functional with async worker, SSE streaming, and OpenAI client. Tested with test_streaming_client.py
+**Note**: Deep learning session on async queues, SSE streaming, Pydantic validation, and how the worker processes requests. streamlit_v2.0.py fully functional with queue position tracking!
 
 ---
 
