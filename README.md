@@ -65,12 +65,19 @@ streamlit run original_streamlit.py
 
 Opens in browser at http://localhost:8501
 
-### Running the Queue Server (when it's finished)
+### Running the Queue Server
 ```powershell
-uvicorn queue_server:app --reload
+# For local access only
+uvicorn queue_server:app --reload --host 127.0.0.1 --port 8000
+
+# For network access (from other machines via VPN/LAN)
+uvicorn queue_server:app --reload --host 0.0.0.0 --port 8000
 ```
 
-API docs at http://localhost:8000/docs
+Access points:
+- API docs: http://localhost:8000/docs (auto-generated, very useful!)
+- Health check: http://localhost:8000/health
+- From other machines: http://YOUR_IP:8000 (only if using --host 0.0.0.0)
 
 ## Your Working Style (Remind Yourself)
 
