@@ -63,23 +63,44 @@ Not just "it works" but "I could rebuild this from scratch and explain every lin
 ## Current Architecture
 
 ### Components
-1. **Streamlit Frontend** (`original_streamlit.py`)
+1. **Streamlit Frontend** (`streamlit_v2.0.py`)
    - Chat interface with model selection
    - System prompt and parameter customization
    - Context injection capability
-   - Currently connects directly to LM Studio (http://localhost:1234/v1)
+   - **UPDATED**: Now connects to queue server (not directly to LM Studio)
+   - Shows queue position and status feedback
 
 2. **FastAPI Queue Server** (`queue_server.py`)
-   - Request queue management
-   - Status tracking
-   - Streaming endpoint (incomplete)
-   - Intended to sit between frontend and LM Studio
+   - Request queue management with `asyncio.Queue`
+   - Background worker for sequential LLM request processing
+   - Status tracking via `/request/{request_id}` endpoint
+   - **COMPLETE**: Streaming endpoint `/stream/{request_id}` using SSE
+   - Sits between frontend and LM Studio
 
 ### Technology Stack
 - **Frontend**: Streamlit
-- **Backend**: FastAPI
+- **Backend**: FastAPI with async/await
+- **Queue**: asyncio.Queue (in-memory)
+- **Streaming**: Server-Sent Events (SSE)
 - **LLM Interface**: OpenAI-compatible client (for LM Studio)
 - **Python Version**: 3.x (venv present)
+
+### Current Understanding Status (as of 2025-10-30)
+**Strong areas** ✅:
+- Basic request flow and architecture
+- Why queue server exists (LM Studio model loading issue)
+- Request lifecycle and data structures
+- Frontend integration (Streamlit session state, API calls)
+- User experience considerations (why streaming matters)
+
+**Needs deeper understanding** 🟡:
+- **Async fundamentals**: Why async vs threading, when to use each
+- **The event loop**: What it is, how it schedules tasks, where it lives
+- **SSE mechanics**: How Server-Sent Events work vs regular HTTP
+- **Streaming data flow**: Complete token journey from LLM → browser with format conversions
+- **Async generators**: How `yield` enables streaming in async functions
+
+**Priority for next "refactor for understanding" session**: Focus on async/SSE/streaming concepts through code walkthrough.
 
 ## Code Style & Conventions
 
@@ -135,27 +156,31 @@ Current pattern for building context:
 
 ## Known Limitations & TODOs
 
-### Current Issues
-1. `queue_server.py` is incomplete:
-   - Line 79: JSON payload is `{...}` placeholder
-   - No actual queue processing worker
-   - No connection to the Streamlit frontend
+### Current System Status
+✅ **Complete**:
+- Queue server with async worker
+- Streamlit frontend connected to queue server
+- Streaming responses via SSE
+- Basic queue position feedback
+- Configuration management (config.py + .env)
+- Dependency management (requirements.txt)
 
-2. No dependency management:
-   - Missing `requirements.txt` or `pyproject.toml`
-   - Dependencies: streamlit, fastapi, openai, httpx, uvicorn (assumed)
+### Active Limitations
+1. **In-memory queue**: Lost on server restart, no persistence
+2. **Single worker**: Only one LLM request processed at a time (by design)
+3. **No authentication**: Open access (planned: AD integration)
+4. **No message persistence**: Conversations not saved between sessions
 
-3. Hard-coded configuration:
-   - LM Studio URL hard-coded in multiple places
-   - Model list manually maintained
-
-### Future Considerations
-- Multi-user support
-- Request rate limiting
-- Response caching
-- Model performance metrics
-- Conversation export/import
-- Database for persistent storage
+### Future Considerations / Potential Extensions
+- **AD user authentication** (connecting to existing auth system)
+- **Message storage** (allow users to save past generations)
+- **Evaluation framework** (for TLC pedagogical research - "evals")
+- **Multi-user sessions** (separate conversation histories)
+- **Request rate limiting** (per-user quotas)
+- **Response caching** (duplicate request detection)
+- **Model performance metrics** (token/sec, latency tracking)
+- **Conversation export/import** (for analysis)
+- **Database for persistent storage** (PostgreSQL, SQLite, etc.)
 
 ## Working with Darrin
 
@@ -256,6 +281,52 @@ What happens next: [1 sentence]
 - He'll give you clues through tangents and stream-of-consciousness responses
 - Update CLAUDE.md when you discover new calibration info
 
+### Learning Exercise Pattern: "Test Your Understanding"
+
+**Discovery**: Traditional "walk through code" sessions are too passive. Active recall works better for deep learning.
+
+**The Pattern** (discovered 2025-10-30):
+1. **Generate questions** (~8-10 max) about working code in colleague-to-colleague format
+2. **Darrin answers** from memory without looking at code (marks confidence: ✅🟡❌)
+3. **Review together** focusing on 🟡 and ❌ areas
+4. **Code walkthrough** for fuzzy concepts to cement understanding
+
+**Why 8-10 questions max**:
+- Cognitive load is real - 27 questions took over an hour and felt overwhelming
+- Smaller chunks are more sustainable and accomplishable
+- Can always do "Part 2" if needed
+- Better to fully digest a small set than partially absorb a large set
+
+**Question design principles**:
+- "Explain to a colleague" framing (conversational, not academic)
+- Mix of "trace the flow", "what is X", "why did we do Y", "what would break if Z"
+- Organized by topic (easier to context-switch between concepts)
+- Include self-assessment ratings (surfaces confidence gaps)
+
+**When to use**:
+- Before extending working code with new features
+- After implementing something complex (async, streaming, etc.)
+- When Darrin says he "kinda understands" something
+- As part of "refactor for understanding" sessions
+
+**Prompt pattern for colleagues**:
+```
+I've been working on [PROJECT/FEATURE] and have a working implementation,
+but I want to test my understanding before extending it.
+
+Can you create a "test your understanding" question file with ~8-10
+questions that would help me discover gaps in my knowledge?
+
+Questions should:
+- Be organized by topic/component
+- Be phrased like a colleague asking me to explain something
+- Range from basic concepts to design decisions
+- Include "trace the flow" type questions
+- Ask about the "why" not just the "what"
+
+I'll answer them without looking at the code, then we'll review together.
+```
+
 ## Project Structure (Proposed)
 ```
 tlc_llm_playground/
@@ -280,5 +351,5 @@ tlc_llm_playground/
 - OpenAI API Spec: https://platform.openai.com/docs/api-reference
 
 ---
-*Last Updated: 2025-10-27*
+*Last Updated: 2025-10-30*
 *Maintained by: Claude (AI Assistant) in collaboration with Darrin*

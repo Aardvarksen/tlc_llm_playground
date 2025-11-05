@@ -1,12 +1,12 @@
 # TLC LLM Playground - MVP Plan
 
-## CURRENT STATE (Last Updated: 2025-10-29)
+## CURRENT STATE (Last Updated: 2025-10-30)
 
-**Last Completed**: 🎉 **PHASE 3.1 COMPLETE** - Created streamlit_v2.0.py that successfully uses queue server! Tested with 8 concurrent browser tabs. Fixed queue position feedback to show "Joined queue at position X, Y total generations in queue"
-**Next Action**: Consider Phase 3.2 (enhanced user feedback) or Phase 4 (code organization/refactoring)
-**Current Phase**: Phase 1 ✅ | Phase 2 ✅ | Phase 3.1 ✅ (Frontend now uses queue server)
-**Blockers**: None
-**Note**: Deep learning session on async queues, SSE streaming, Pydantic validation, and how the worker processes requests. streamlit_v2.0.py fully functional with queue position tracking!
+**Last Completed**: 🎓 **"Test Your Understanding" exercise** - Answered 15/27 questions about the working MVP. Identified knowledge gaps in async/SSE/streaming fundamentals. Discovered that 8-10 questions is the sweet spot for cognitive load (27 was too many).
+**Next Action**: "Refactor for Understanding" session focusing on async/event loop/SSE/streaming concepts. Walk through queue_server.py and streamlit_v2.0.py code together to cement understanding of the fuzzy areas before adding new features (AD auth, message storage, evals).
+**Current Phase**: Between Phase 3 and Phase 4 - MVP works, but understanding needs to deepen before extending
+**Blockers**: None - just need focused learning session
+**Note**: Working MVP is complete (Phases 1-3.1 ✅). Darrin "kinda understands" the code but wants to reach "could explain every loop and thread" before building new features. Smart move - building on shaky understanding = debugging nightmare.
 
 ---
 
