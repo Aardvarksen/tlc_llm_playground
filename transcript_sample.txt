@@ -1,0 +1,570 @@
+[0.0s] SPEAKER_03: go with your screens yeah one is working so i can do anything the second one i need another doctor that's right
+[9.2s] SPEAKER_02: Raquel, I don't think we've met before, so nice to meet you.
+[13.9s] SPEAKER_02: Nice to meet you too.
+[16.0s] SPEAKER_02: We're working on a project right now to reimagine the CE registration system.
+[22.8s] SPEAKER_02: One of the things that I'm doing with my business analyst hat on is mapping out the current process, so the parts that...
+[32.4s] SPEAKER_02: use the existing systems and also the parts for managing CE courses that go outside of the system and are done manually.
+[41.1s] SPEAKER_02: So my goal is to get a picture of the overall process of
+[45.6s] SPEAKER_02: Creating a course, publishing it, having somebody register and then finish.
+[52.1s] SPEAKER_02: Do you guys mind if I record this meeting for like auto notes generation and stuff like that?
+[59.1s] SPEAKER_02: I don't mind.
+[60.5s] SPEAKER_02: Okay, awesome.
+[61.9s] SPEAKER_02: I'm going to start that.
+[65.8s] SPEAKER_02: Start recording.
+[71.3s] SPEAKER_02: Starting recording a transcription.
+[73.6s] SPEAKER_02: Okay, awesome.
+[74.6s] SPEAKER_02: So...
+[75.7s] SPEAKER_02: The stuff that I've done so far is to meet with the CE coordinators and kind of learn about what happens before courses actually go into CE reg.
+[86.1s] SPEAKER_02: So kind of up to and including them submitting the mock forms.
+[92.4s] SPEAKER_02: So what I'm hoping to learn from you guys today is once those mock forms are submitted, what do you do?
+[98.8s] SPEAKER_02: What do you do with that information?
+[100.9s] SPEAKER_02: How do you get the courses submitted?
+[102.5s] SPEAKER_02: up and live onto the existing CEREG site.
+[108.3s] SPEAKER_02: And one really awesome thing this morning that happened is meeting with the coordinators as we talked about how helpful it would be to actually have a pretend course that I could walk through and kind of pretend to check out and kind of see what that looks like from a student or a learner perspective.
+[124.9s] SPEAKER_02: So Christine wonderfully sent in a mock form for a pretend course.
+[132.3s] SPEAKER_02: And Gagan suggested that we could actually watch the process happen with this pretend course, which I think is absolutely fantastic and probably a lot faster and more efficient than me trying to type and do screen captures and do images and all that kind of stuff in the big process map.
+[156.9s] SPEAKER_02: So if we want to start there, I'll probably ask
+[162.1s] SPEAKER_02: questions along the way um get some details and then um with the recording and transcription um i'm hoping to pull out and automate a bunch of note-taking um so gagan you have a request you have a mock form that's come in from christine so i just shared my screen i hope everybody's able to see it yeah
+[187.5s] SPEAKER_03: Okay, so once we get a mock form, it comes up in this form.
+[193.8s] SPEAKER_02: Does it go directly to you?
+[195.5s] SPEAKER_02: Sorry, I'm going to ask a lot of questions.
+[197.2s] SPEAKER_02: I'm going to try not to do a ton, but when the mock form comes in, I'm just taking notes on my other screen, my giant monitors.
+[209.7s] SPEAKER_02: Does it go...
+[211.9s] SPEAKER_02: Who does it go to so that there's a general CWT.
+[216.6s] SPEAKER_01: It's a general email that is used for general student inquires and for course creation.
+[225.5s] SPEAKER_01: CWT at Selkirk.ca.
+[227.9s] SPEAKER_01: Okay.
+[234.1s] SPEAKER_02: Okay.
+[235.4s] SPEAKER_02: So then, so you have this, this mock forum in your email with all of the details.
+[244.1s] SPEAKER_02: And then you go into the edit side.
+[257.0s] SPEAKER_03: Okay.
+[258.9s] SPEAKER_03: So the first thing I look at is it's the date and the codes, because with these codes, I get to know if it's a new course or not.
+[269.0s] SPEAKER_03: And with the dates, I know like which term I'm working in.
+[273.3s] SPEAKER_03: So like it's September 27th, I'm assuming it's for fall 2026.
+[277.3s] SPEAKER_03: That's where I'm going to go.
+[281.5s] SPEAKER_03: I'm going to go into fast.
+[285.3s] SPEAKER_03: And then here over the add course, I'm gonna run this code to see if this one already exists in the system or not.
+[299.2s] SPEAKER_03: So any, if it has been previously created, it would automatically fill up everything as soon as I do the tab.
+[307.1s] SPEAKER_03: And if it's not, then I probably have to fill up all this information
+[312.6s] SPEAKER_03: So most of this do come in the mock form if it's a new course, and if not, they just send the intake information.
+[321.8s] SPEAKER_03: Once I add the course.
+[323.9s] SPEAKER_02: So hold on one second.
+[325.7s] SPEAKER_02: So when you are, you said if, if the course ID already exists, um, it's going to pre-fill that information.
+[332.9s] SPEAKER_02: And if it doesn't exist, um, you have to fill it all out.
+[336.1s] SPEAKER_02: And is that a manual?
+[337.6s] SPEAKER_02: Like, are you copying and pasting from the mock form email?
+[341.5s] SPEAKER_03: The only thing I'm copying is the description and the title.
+[344.9s] SPEAKER_03: The remaining terms usually remain same for all the CEWT courses unless until it's mentioned.
+[351.5s] SPEAKER_03: So like it's free for staff, no partnership if it's there.
+[355.9s] SPEAKER_03: Most of the courses are on no.
+[358.4s] SPEAKER_03: The only thing that sometimes has to be taken care of is like if some of the courses have a EDU email created towards them, at that time it converts.
+[370.5s] SPEAKER_03: We have to change the program as CWDEXT and else it remains at CCID1.
+[382.2s] SPEAKER_02: Okay, awesome.
+[384.0s] SPEAKER_02: So you've got it in there.
+[385.2s] SPEAKER_02: So you're filling out all the fields.
+[387.3s] SPEAKER_00: One question just there.
+[389.1s] SPEAKER_00: Is it only ever CCID1 or CEWT EXT?
+[393.4s] SPEAKER_00: Or do you create courses in CE Reg for programs other than that?
+[397.4s] SPEAKER_00: I'm thinking like a ski lift as an example.
+[400.8s] SPEAKER_01: Yeah.
+[401.4s] SPEAKER_01: There are other kinds like lift, like a spectrum, like DC electrical code.
+[407.9s] SPEAKER_01: And I think refrigeration plant operators.
+[412.2s] SPEAKER_01: All those courses have different
+[414.3s] SPEAKER_01: course code in SRF to be, that is different than CCID.
+[422.5s] SPEAKER_00: Thank you.
+[423.8s] SPEAKER_03: Yeah, so EXT is very specific when you need EDU emails.
+[428.0s] SPEAKER_03: So in case if you don't need it, then they just stay in CCID1.
+[431.7s] SPEAKER_02: yeah um could you actually open that screen one more time i had a another question um there is a field there for partner partnership and partner can you tell us what those are so so far i have worked it has always remained no
+[452.6s] SPEAKER_03: I think the purpose, which I understand is like, if it's been in a partnership, the program specific, the whole program, that's when you can have it as a yes.
+[461.7s] SPEAKER_03: And then you add the partner name.
+[464.1s] SPEAKER_03: But in my three, three and a half years in CERED, I have never encountered anywhere.
+[470.6s] SPEAKER_03: It says yes to any of it.
+[472.8s] SPEAKER_03: Usually you have, if there is a partner one, like you're doing it for a specific organization, it goes more on the intake side because it's more of a, like an inventory.
+[482.8s] SPEAKER_03: not the intake.
+[491.8s] SPEAKER_00: Okay.
+[492.3s] SPEAKER_00: Okay, that'd be another question to get that would be good to confirm right now.
+[496.6s] SPEAKER_00: Um, what is your language within the registrar's office for what's on this screen versus what's on the next screen that you'll get into?
+[507.1s] SPEAKER_03: So for me, it's more on the inventory side, whereas the next screen would be more on the course intake side.
+[515.1s] SPEAKER_03: OK.
+[515.2s] SPEAKER_03: So it would be.
+[516.4s] SPEAKER_00: So this would be the inventory and the next screen will be the intake.
+[519.5s] SPEAKER_03: Yeah.
+[526.1s] SPEAKER_03: So once we are here, we know that the course has already now been in the system, then we just add this section.
+[531.5s] SPEAKER_03: So that's actually the intake that you're forming.
+[535.9s] SPEAKER_03: Now this is like the drop list based on the account code, like where the course is going to be there.
+[541.8s] SPEAKER_03: Like, so for this, it's still working.
+[544.5s] SPEAKER_03: So we're going to go hassle working.
+[546.3s] SPEAKER_03: Uh, online, online, online.
+[551.0s] SPEAKER_03: Yes.
+[551.6s] SPEAKER_03: Okay.
+[552.9s] SPEAKER_03: And then we have our maximum one expected one.
+[561.4s] SPEAKER_03: And the result is one.
+[562.8s] SPEAKER_03: So the cancel is on.
+[567.8s] SPEAKER_03: I think she did it wrong.
+[570.3s] SPEAKER_03: I think the Mac minimum should be zero because the maximum is one.
+[574.0s] SPEAKER_03: So I think that's like a issue with the one that she's submitted.
+[579.5s] SPEAKER_03: The next one is the, so intake is for the, if it has a fixed start date and an end date, and there's another field that's continuous.
+[590.4s] SPEAKER_03: That's of course is that can have a number of start dates, but just one fixed end date.
+[595.9s] SPEAKER_00: Wow.
+[597.5s] SPEAKER_03: So this seems to be a fixed one.
+[599.8s] SPEAKER_03: Yeah.
+[602.6s] SPEAKER_03: And then we just want to put the code 104, 175, 100.
+[607.8s] SPEAKER_03: And that's where the other thing I'm finding is like, these are not the work order numbers.
+[615.1s] SPEAKER_03: They are more of the FRS codes.
+[619.1s] SPEAKER_03: So they need to have those FRS codes with the CWD coordinators, because for some reason, the present system does not take the work orders in.
+[631.1s] SPEAKER_03: So it can only have the FRS codes in there.
+[636.5s] SPEAKER_00: This system predates unit four is the rationale for that.
+[641.2s] SPEAKER_03: Yeah.
+[642.1s] SPEAKER_03: So like sometimes we do get the request, like if it's coming from not anymore, but initially coming from like Selkirk and awaits, they would rather have like a work order sent in and there's no way it can create a course with a work order in it.
+[659.4s] SPEAKER_03: So the next one is this particular thing just allows the student to register online.
+[668.0s] SPEAKER_03: So this allows them and in brochure makes it visible.
+[672.2s] SPEAKER_03: So if it's no, they cannot see it.
+[675.8s] SPEAKER_02: And then just to clarify that the in brochure field online visibility.
+[686.4s] SPEAKER_03: Yeah.
+[688.3s] SPEAKER_03: and allow WebRudges for them to be enabled to register by themselves, like selected as a card.
+[703.0s] SPEAKER_02: Can you give me an example or have you seen one of a course where you wouldn't allow WebRudge?
+[711.6s] SPEAKER_03: Yeah, a lot of LIR courses, like sometimes when you create courses and they're not live yet, we usually have them like no web bridge allowed.
+[720.2s] SPEAKER_03: So that's more for like the marketing aspect, like this course is coming, but you're not allowed to register till this period of time.
+[728.8s] SPEAKER_03: So usually, but if they're like contract courses, they go in the brochure.
+[735.0s] SPEAKER_03: So they can see it, but they have a restriction on applying because they're set for certain, like say with tech or any of those organizations, then it's more of like a EO entry for the courses or the CEWT coordinators.
+[750.6s] SPEAKER_03: I think Raquel would know more.
+[751.8s] SPEAKER_01: There are cases as well where you cannot get registered when you need to meet some prerequisites.
+[759.0s] SPEAKER_01: Like, for example, for the advanced per se, for the transportation endorsement, for this electrical code extension, you cannot get registered through the website.
+[768.7s] SPEAKER_01: The course can be seen in the website, but you cannot get registered.
+[772.7s] SPEAKER_01: You need to get in touch with the person that is written off in the website.
+[778.4s] SPEAKER_01: We have the, where Gagan is showing that there's a low web registration in the immediate next web, yeah, that web reg notes.
+[788.9s] SPEAKER_01: we can put any name, any information that we can show the students where to contact when you are not able to get registered through the website.
+[802.1s] SPEAKER_03: So usually when it's no, it's always followed with a note.
+[806.1s] SPEAKER_03: So like, for example, this was the one for LIR courses that said like the courses will be open for online registration.
+[813.6s] SPEAKER_03: So the courses are being there for marketing aspect, but they're not open yet.
+[818.9s] SPEAKER_03: Or like if there is like a course with tech, they are doing a first aid course with them.
+[826.1s] SPEAKER_03: and they don't know how many seats they're going to fill in.
+[829.0s] SPEAKER_03: So it would be like contact this particular coordinator if you want to enroll in this course and the coordinator knows if there are any more seats left or not.
+[837.1s] SPEAKER_02: Yeah.
+[838.0s] SPEAKER_02: And they're managing it manually.
+[840.4s] SPEAKER_01: Yeah.
+[840.9s] SPEAKER_01: And when you don't put any kind of information in there, that defaults automatically to CWT email.
+[849.7s] SPEAKER_01: So if there is no information provided and you just know,
+[854.1s] SPEAKER_01: The website will show contact.cwt.selcric.ca for more updates or for information.
+[864.7s] SPEAKER_03: Okay, then the rest is just follow.
+[867.2s] SPEAKER_03: And the notification one is like specifically if you want somebody else to have that notification as well.
+[874.8s] SPEAKER_03: So that's usually in the case of Selcric Innovate.
+[880.0s] SPEAKER_02: So is that notification for when people register for the class?
+[884.9s] SPEAKER_03: Yeah.
+[888.6s] SPEAKER_03: So for example, somebody has registered and Selkirk Innovate, they don't have the access to CEWT at selkirk.ca.
+[897.4s] SPEAKER_03: So we'll put them saying like, as somebody registers, they also get a notification that somebody has registered in their course.
+[912.8s] SPEAKER_03: And this is just the tuition with the GST.
+[916.2s] SPEAKER_03: No.
+[917.0s] SPEAKER_03: If there's a material fees in this case, there's no.
+[920.8s] SPEAKER_03: So we keep it.
+[921.6s] SPEAKER_03: No, it doesn't matter.
+[922.8s] SPEAKER_03: But my practice is to always make it zero if there is no cost.
+[927.7s] SPEAKER_03: Refundable, we have multiple options.
+[930.2s] SPEAKER_03: This is only with the tuition material.
+[933.7s] SPEAKER_03: And in case of yes, it refunds all of them.
+[937.4s] SPEAKER_03: I usually put a tuition when I don't have any other fees associated, just in case.
+[944.3s] SPEAKER_03: So I'll always keep it to tuition only.
+[948.1s] SPEAKER_02: Can you, or have you seen examples of where part of it was refundable and part of it wasn't?
+[955.2s] SPEAKER_02: And any idea, like what, can you give us an example of that?
+[961.2s] SPEAKER_03: I think that would be Raquel's.
+[963.9s] SPEAKER_01: Yeah.
+[964.9s] SPEAKER_01: Yes, that has been a pain.
+[966.3s] SPEAKER_01: for me overall, because the advanced first aid, for example, the advanced first aid course has a fee attached to it.
+[979.2s] SPEAKER_01: And when you are seeing that Gagan is placing the fees, there is at the end, there is a section that is refundable.
+[987.9s] SPEAKER_01: And we usually put tuition only.
+[991.0s] SPEAKER_01: But when we enter the amount of the book
+[996.1s] SPEAKER_01: through SRS, usually the system, if we are removing the book charge, the system refunds the money, even when it has not been paid.
+[1006.7s] SPEAKER_01: Even when here says tuition only, always refunds that part, even when the student has not paid and the money is refunded from the payment that has gone for the course.
+[1017.2s] SPEAKER_01: So, yeah.
+[1020.8s] SPEAKER_02: That must be a lot of reconciliation going back and forth.
+[1024.8s] SPEAKER_01: Yes, we have to be contacting the student to explain that the system refunds the money that he never paid and that he has to pay again for the money that was refunded for the book that he never got.
+[1039.4s] SPEAKER_01: So it's very painful.
+[1042.2s] SPEAKER_01: And yes, it has been something that I have been dealing with
+[1048.5s] SPEAKER_01: I don't know why, because before you have to work.
+[1051.4s] SPEAKER_01: If we put just tuition only, never refunded the book.
+[1055.7s] SPEAKER_01: But now if I am removing the book, refunds the money that was not paid.
+[1059.9s] SPEAKER_01: So it's a shame.
+[1062.7s] SPEAKER_02: Gagan, can you just open that refundable field again?
+[1066.1s] SPEAKER_02: The refundable tuition only, materials fee only.
+[1070.6s] SPEAKER_02: Is there a...
+[1073.2s] SPEAKER_02: scenario where we would refund materials fees only but not tuition?
+[1083.2s] SPEAKER_01: No.
+[1085.3s] SPEAKER_01: There is no cases that we have done that.
+[1088.4s] SPEAKER_01: It's just referring to the books.
+[1094.6s] SPEAKER_01: Usually we use and we change this only for a few courses because most of the courses are refundable
+[1101.7s] SPEAKER_01: if the students withdraw within the withdrawal policy.
+[1105.8s] SPEAKER_01: So if the students withdraw four or more business days prior to the course start date, the system automatically refunds the money if the student has paid with credit card.
+[1120.4s] SPEAKER_01: That is a standard procedure to see courses, but it has withdrawn three days, the system refunds 50%, et cetera.
+[1129.4s] SPEAKER_01: So yeah, we don't touch that section at all, except for the courses that have books.
+[1137.3s] SPEAKER_01: Okay.
+[1137.5s] SPEAKER_01: Yeah.
+[1151.1s] SPEAKER_00: I'm sorry, just asking about that, because it's piqued my curiosity.
+[1155.1s] SPEAKER_00: Is this a recent change that it started refunding materials fees when the refundable flag is set to tuition only?
+[1164.4s] SPEAKER_01: You know, I have noticed that that has been recently, but probably for me recently, the last two or three years, because I have been in CE for almost eight, 80, no, yeah, almost
+[1181.2s] SPEAKER_01: almost eight years.
+[1183.1s] SPEAKER_01: So I, I have lost account before.
+[1186.1s] SPEAKER_01: I remember that used to work.
+[1188.5s] SPEAKER_01: And then refund the money.
+[1190.8s] SPEAKER_00: I just did a quick search from our ticket system.
+[1195.4s] SPEAKER_00: So it's very possible that I've missed it.
+[1197.3s] SPEAKER_00: But do you know if this has been escalated to it as an issue yet?
+[1202.2s] SPEAKER_01: Oh, probably I don't remember probably yet we have, we have had that thing
+[1210.2s] SPEAKER_01: put it in the table many times, but I don't know.
+[1214.3s] SPEAKER_01: I don't think we have been dealt with.
+[1219.0s] SPEAKER_00: And then the last question would be, have you noticed if there's any change in the behavior if it's a withdrawal that's entered through...
+[1232.1s] SPEAKER_00: through the CEREG front end when you're logged in as an enrollment officer versus going through StoopDate to modify the enrollment directly the same as you might for a non-CE course?
+[1248.1s] SPEAKER_01: Well, the only way that I modify it is through SRS.
+[1253.6s] SPEAKER_01: So it has always been like that.
+[1255.0s] SPEAKER_00: Okay.
+[1255.4s] SPEAKER_00: So you wouldn't go through CEREG.selkirk.ca all the courses, the CE courses only through SRS?
+[1262.4s] SPEAKER_01: Only through SRS.
+[1265.1s] SPEAKER_01: Yeah, the book fees are entered directly through SRS.
+[1269.4s] SPEAKER_01: I don't go through the registration page.
+[1275.6s] SPEAKER_01: No, just through SRS.
+[1281.9s] SPEAKER_02: Yeah.
+[1282.7s] SPEAKER_02: I have another question.
+[1286.4s] SPEAKER_02: Do you guys know the criteria for charging GST on something versus not?
+[1294.8s] SPEAKER_02: So in what cases would you charge GST on tuition?
+[1298.6s] SPEAKER_02: In what cases would you charge GST on materials?
+[1302.3s] SPEAKER_03: That's completely on CEWT coordinators.
+[1305.2s] SPEAKER_03: So that's why on the mock form, it comes like if it's a cost as a GST or not.
+[1310.5s] SPEAKER_03: So if it's no, then it's a no.
+[1312.9s] SPEAKER_03: So I think that's their parameter to decide if they are charging GST or not.
+[1318.5s] SPEAKER_01: Yeah, well, my general knowledge about the criteria for the GST is that it is a course directed for somebody to use it to get a job that includes GST.
+[1332.7s] SPEAKER_01: Like, for example, for first aid courses, most of the people get those courses to get employed somewhere.
+[1340.8s] SPEAKER_01: So those courses never have GST.
+[1343.3s] SPEAKER_01: But if you get Canadian Firearms, you get Drawing Essentials, all these courses have GST because they're reassuring and recreational.
+[1355.4s] SPEAKER_02: OK.
+[1357.5s] SPEAKER_02: I will ask the coordinators that, yeah, just to understand kind of the business logic.
+[1362.7s] SPEAKER_02: But that makes sense.
+[1364.8s] SPEAKER_02: Thank you.
+[1365.9s] SPEAKER_02: Appreciate it.
+[1368.7s] SPEAKER_02: OK.
+[1369.2s] SPEAKER_02: Yeah, I can keep going.
+[1370.9s] SPEAKER_03: No, no worries.
+[1374.0s] SPEAKER_03: And then the next one is the complete starters.
+[1376.8s] SPEAKER_03: It's just like pushing it into SRS as well.
+[1379.2s] SPEAKER_03: That's the only purpose based on my understanding is like if it's on an incomplete, you cannot see that goes on SynthEdit.
+[1387.2s] SPEAKER_03: But you'd be able to see that goes on SynthEdit.
+[1389.3s] SPEAKER_03: It has to be entry status set as complete.
+[1392.4s] SPEAKER_03: So then it automatically goes to yes, update SRS.
+[1397.4s] SPEAKER_03: The next thing I do is adding an instructor.
+[1400.6s] SPEAKER_03: So in this case, it's been.
+[1410.3s] SPEAKER_03: So if I can find the instructor, it's always searching by the last name on the dropdown.
+[1415.8s] SPEAKER_03: So if the instructor is there, it's good.
+[1420.5s] SPEAKER_03: And in case if it's not there, then I go and add new instructor.
+[1424.7s] SPEAKER_03: Just add the first name and the last name.
+[1427.4s] SPEAKER_03: and then go add instructor.
+[1432.6s] SPEAKER_02: Yeah, so we're just adding an instructor.
+[1436.0s] SPEAKER_02: We're not tracking anything else in here.
+[1438.2s] SPEAKER_02: No phone number, no credentials, nothing else.
+[1442.2s] SPEAKER_03: Okay.
+[1443.5s] SPEAKER_03: Because I think it's the coordinators who have the complete information on the instructors.
+[1453.7s] SPEAKER_03: And then the last part is adding the timetable.
+[1457.3s] SPEAKER_03: So as I can see, the location is still working.
+[1460.2s] SPEAKER_03: It goes still working.
+[1461.6s] SPEAKER_03: And then based on T117, I know it's a classroom block.
+[1472.7s] SPEAKER_03: In case if I don't see the room number here, then I usually like these are the numbers.
+[1477.5s] SPEAKER_03: If I'm not seeing on the dropdown, then I'll just add it as a room comment.
+[1483.0s] SPEAKER_03: Like certain rooms don't show up.
+[1487.3s] SPEAKER_02: That's interesting.
+[1488.2s] SPEAKER_02: So you're looking at, let me just see.
+[1490.8s] SPEAKER_02: So the campus, the building, and then the room.
+[1495.3s] SPEAKER_02: So I'm just going to write campus, the building, and room.
+[1499.9s] SPEAKER_02: But sometimes the room number isn't in the dropdown.
+[1502.6s] SPEAKER_02: So you have to add it via comment.
+[1506.6s] SPEAKER_03: So it would be a room comment.
+[1509.3s] SPEAKER_00: What are some of those examples of a room that you've used that doesn't show up?
+[1514.1s] SPEAKER_03: So for example, C110 is not on that list.
+[1518.8s] SPEAKER_03: And then also I'm not particular like how the campus is because I've never visited that campus.
+[1527.1s] SPEAKER_03: So I don't know what that room is.
+[1528.9s] SPEAKER_03: Could be a room for not a classroom, but for something else.
+[1533.0s] SPEAKER_03: Hmm.
+[1535.6s] SPEAKER_03: Because, like, I'm creating a course for grand folks or in a class, so sometimes I don't know, like, what the classrooms look like and I don't have that list.
+[1545.2s] SPEAKER_02: Yeah.
+[1545.4s] SPEAKER_02: You don't know what's available and what might be missing.
+[1547.5s] SPEAKER_02: So you're just going off the mock form.
+[1552.5s] SPEAKER_02: So Christina's saying Silver King, C117.
+[1555.1s] SPEAKER_02: Yeah.
+[1557.9s] SPEAKER_02: you know it's it's in there but if she's saying something else then there's not is it um is it that you're not sure so just noticing a discrepancy so on that mock form we have the campus and the room but there isn't that um there isn't that intermediary piece of the building yeah so if i don't so like you have to kind of guess
+[1583.6s] SPEAKER_03: Uh, then again, I just learned it with time.
+[1588.2s] SPEAKER_03: So like, if there is no building, then nothing in the room will come up.
+[1593.0s] SPEAKER_03: So like how I got to know was like, I would pick one and then see if that number comes up somewhere.
+[1599.4s] SPEAKER_03: That's how I started to know, like, okay.
+[1602.3s] SPEAKER_03: Every time it's a word, see that refers to a classroom block.
+[1607.8s] SPEAKER_01: Ah, I see.
+[1610.6s] SPEAKER_01: Usually the description of the classroom is not provided by anybody than Christine.
+[1618.6s] SPEAKER_01: Nobody provides the classroom number or the building name except Christine.
+[1624.6s] SPEAKER_01: And recently we started forcing that to put it in the website because we have an issue with a student that could not find where to go.
+[1636.0s] SPEAKER_01: Yeah, where are you supposed to go?
+[1638.0s] SPEAKER_01: Yeah, but before we...
+[1640.7s] SPEAKER_01: never put any information there.
+[1643.2s] SPEAKER_01: Just recently, we are doing that in Nelson.
+[1647.5s] SPEAKER_03: I think even CASLs sometimes do when they know what exactly room they're doing their course in.
+[1653.8s] SPEAKER_03: I think they now have some designated areas for them, so it gets easier.
+[1659.2s] SPEAKER_03: But in case if it's not there, we just leave it blank.
+[1662.4s] SPEAKER_03: And anytime it's an off-campus?
+[1665.1s] SPEAKER_03: Sorry, go ahead.
+[1666.3s] SPEAKER_02: What about classes that happen off-campus?
+[1669.4s] SPEAKER_02: So my very brief time with CE, I set up one first aid class and it was at the Legion here in Kaslo.
+[1677.0s] SPEAKER_03: So in case...
+[1679.8s] SPEAKER_03: So that's the option for...
+[1681.5s] SPEAKER_03: So if I do it as a no, then I can always enter.
+[1685.2s] SPEAKER_03: So like sometimes at this hall, sometimes it's the Mayor's Center for Peace for Kaslogard.
+[1691.0s] SPEAKER_03: So depending if
+[1693.0s] SPEAKER_03: If I have that information, it goes as I put as no and then I put that detail.
+[1699.7s] SPEAKER_03: But if it says just on location off campus, then I'll put on campus no and put the location as off campus.
+[1706.9s] SPEAKER_02: Off campus, right.
+[1709.2s] SPEAKER_03: So it's totally based on what I'm getting on the mock form.
+[1713.0s] SPEAKER_02: Yeah.
+[1715.3s] SPEAKER_02: So the mock form may not include the actual...
+[1721.5s] SPEAKER_03: for the off campus.
+[1724.2s] SPEAKER_03: So there's sometimes just the off campus.
+[1730.0s] SPEAKER_03: And then the next part is the date.
+[1733.5s] SPEAKER_03: So since it's September, September 27, so it's a Sunday.
+[1745.0s] SPEAKER_03: And then it starts at 1.
+[1753.3s] SPEAKER_03: and then I have all that if it's running all week then I have to do Monday, Tuesday, Wednesday, Thursday, Friday so it just helps us to know what particular day because sometimes the courses run for like multiple weeks but on a specific day so like if it's Sunday for next three weeks then I'll just choose the very first Sunday and the end date would go like three weeks after that so and it can go to like
+[1784.9s] SPEAKER_03: Next is this, and then, so then it will just show three courses on like three intakes, three classes.
+[1795.5s] SPEAKER_03: So that's how it helps.
+[1799.9s] SPEAKER_03: And then once everything is created, I just do an add section.
+[1804.4s] SPEAKER_03: It's just letting me know what all the things I have done and then, okay.
+[1811.5s] SPEAKER_03: So this course is now in the system.
+[1815.3s] SPEAKER_03: And now if we go in community aid, I keep it handy for me to see if the course I had created has some sort of issue or not.
+[1830.1s] SPEAKER_03: So we are looking at advanced first aid.
+[1847.8s] SPEAKER_02: Okay, so it's there and it exists and now I can...
+[1853.1s] SPEAKER_03: I don't see it.
+[1855.4s] SPEAKER_02: Okay, sorry, it's not up yet.
+[1860.7s] SPEAKER_03: Oh yeah, it's just like the parameters are not yet open for fall.
+[1868.1s] SPEAKER_03: should I make it for winter for now or do you want me to change it?
+[1870.7s] SPEAKER_02: Yeah, if you can make it for winter, cause I'd like to do, um, so, so my goal with this is to pretend I'm a student, um, go through that registration process and kind of, um, see what comes up.
+[1883.7s] SPEAKER_02: I was able to kind of do, um, a little bit earlier when I was talking with the coordinators, but obviously I didn't want to actually purchase a seat in a course.
+[1893.6s] SPEAKER_02: I didn't want to throw off any financial numbers or anything like that.
+[1896.5s] SPEAKER_02: So, um,
+[1898.9s] SPEAKER_02: christine suggested kind of a dummy course because i want to see what happens you know after i as a student add it to my card and my pay what's that experience like um i was we kind of went through that um earlier with you know how do i create an account from scratch what does it look like if i don't remember my pin um that sort of thing and i was able to do all of that without otherwise um affecting the system
+[1926.4s] SPEAKER_03: So I just removed some of the items because they were, like, doing a conflict.
+[1930.6s] SPEAKER_03: So I just removed the timetable aspects of it just for now.
+[1936.0s] SPEAKER_03: So now if we go here.
+[1940.4s] SPEAKER_03: Yeah, you can see this section.
+[1942.1s] SPEAKER_02: Yeah, okay, that is
+[1951.2s] SPEAKER_02: perfect the way it is because I would actually like to walk through and document the waitlist functionality.
+[1959.4s] SPEAKER_02: So that is perfect exactly the way it is right now.
+[1971.1s] SPEAKER_00: Can you describe how the waitlists function currently?
+[1976.9s] SPEAKER_03: So right now, that's where I find a lot of problems.
+[1981.3s] SPEAKER_03: So for some of the courses, it come up as weightless, set up as no.
+[1988.2s] SPEAKER_03: And for some courses, it comes up as weightless, set up as yes.
+[1994.5s] SPEAKER_03: And there is no way I'm able to determine what's triggering it.
+[2001.4s] SPEAKER_00: Mm-hmm.
+[2002.6s] SPEAKER_02: So where would you see that a waitlist has that, or that a course has that option of waitlist, yes or no?
+[2009.4s] SPEAKER_03: So that's what I have done in my practices.
+[2011.8s] SPEAKER_03: Like I just go look at this and edit.
+[2016.9s] SPEAKER_03: So like for this one, plus one, one.
+[2024.0s] SPEAKER_03: Cheap.
+[2040.1s] SPEAKER_03: That's when I'm going to see it.
+[2041.5s] SPEAKER_03: So it says the waitlist is permitted.
+[2045.2s] SPEAKER_02: Okay.
+[2051.6s] SPEAKER_02: Can you show us another course if you know one off the top of your head where...
+[2057.6s] SPEAKER_03: It's a no.
+[2059.1s] SPEAKER_02: Where it's a no, yeah.
+[2063.2s] SPEAKER_02: If you can think of one.
+[2069.6s] SPEAKER_03: So far as 1,000 always comes as no.
+[2074.7s] SPEAKER_03: But throughout the process, as you've seen in CRED, there's no way I'm even monitoring a waitlist option, nor does it ask me.
+[2081.8s] SPEAKER_03: For me, sometimes it's so hard to know what's triggering a yes and what's triggering a no.
+[2087.0s] SPEAKER_02: No.
+[2090.2s] SPEAKER_03: So if I'm creating a new code.
+[2092.4s] SPEAKER_02: Yeah, basic first aid, WorkSafe BC, if you want to do this class.
+[2099.3s] SPEAKER_02: We have a maximum of 12.
+[2103.7s] SPEAKER_02: It's open.
+[2106.6s] SPEAKER_02: You can do it, but a wait list is not permitted.
+[2109.1s] SPEAKER_02: And we don't know why.
+[2111.5s] SPEAKER_03: In case of any time, it's a no.
+[2114.9s] SPEAKER_03: Because with community ed, I think it's really hard to, like there's like a last minute people who are entering.
+[2123.3s] SPEAKER_03: And I think Raquel would know better why they don't have it.
+[2131.7s] SPEAKER_03: So my understanding is because there's not many pullouts and there has to be a certain number of students to run a course because for a full state of person, an instructor is monitoring it.
+[2148.7s] SPEAKER_03: You need to have an easy access to every student.
+[2152.1s] SPEAKER_03: So they don't want to bulk it up.
+[2154.3s] SPEAKER_03: And in case of a wait list, because there's not many pull-offs, so it's so hard to like
+[2161.7s] SPEAKER_03: And then you don't know if the next schedule matches with the person who's applying.
+[2166.8s] SPEAKER_02: Okay.
+[2169.3s] SPEAKER_03: So usually they have like a course that will fall with passes.
+[2173.6s] SPEAKER_03: Usually they have probably 10 sections, 10 intakes that run during a one term at one campus.
+[2181.8s] SPEAKER_03: So at the ease whosoever can get what they want.
+[2186.1s] SPEAKER_02: Okay.
+[2187.4s] SPEAKER_02: I'm going to dig into the manual kind of waitlist management processes with the coordinators, I think maybe next time.
+[2197.7s] SPEAKER_02: So I'll make sure to ask them that question.
+[2200.8s] SPEAKER_02: But it's really, yeah, I'll hopefully be able to.
+[2207.1s] SPEAKER_03: And do you want me to keep this one full right now or you want me to hide it?
+[2212.5s] SPEAKER_03: Because my only concern is I don't want any student to like...
+[2217.0s] SPEAKER_03: see a $1 price and then try to
+[2221.2s] SPEAKER_02: Yeah, hide it for now.
+[2223.8s] SPEAKER_02: I'm not probably going to have time to do it until next week.
+[2228.1s] SPEAKER_02: But I will just reach out to you on Teams and say, hey, can you enable that course?
+[2234.9s] SPEAKER_02: Because I don't want students, I don't want to mess up the system for students, right?
+[2240.4s] SPEAKER_02: Or for you guys or for the coordinators.
+[2243.7s] SPEAKER_02: So I will let you know.
+[2246.3s] SPEAKER_03: I'm just going to send you the code for this one, just in case.
+[2252.2s] SPEAKER_03: Whenever you want me to open it, I'm just gonna know exactly what code I'm looking into.
+[2260.1s] SPEAKER_02: Awesome, thank you.
+[2281.3s] SPEAKER_02: Let's see, so we're at 2.09.
+[2284.6s] SPEAKER_02: Going through that process, we have the video.
+[2289.0s] SPEAKER_02: I've kind of got a super quick and dirty outline.
+[2292.8s] SPEAKER_02: And you actually were able to show us both kind of adding a new course and editing a course.
+[2302.5s] SPEAKER_02: Although, excuse me, for this instance, this demo course,
+[2308.9s] SPEAKER_02: We were kind of looking, we had this kind of course ID already existing of the FAST 1002G.
+[2320.3s] SPEAKER_02: What if it was a brand new course?
+[2323.3s] SPEAKER_02: Like what if CE was offering a new course from scratch?
+[2327.5s] SPEAKER_02: Would you have to create a new course code?
+[2330.4s] SPEAKER_03: Yeah.
+[2332.3s] SPEAKER_02: Can you show us how you would do that?
+[2335.6s] SPEAKER_03: so it's like various um so for now what i have done just a second
+[2349.3s] SPEAKER_02: As I know from CE, Tiffany answered this question.
+[2354.9s] SPEAKER_02: I had this question in the fall about, okay, well, what percentage of your courses are, you know, one-off only, like come make a holiday wreath with us, and what are repeated courses?
+[2365.7s] SPEAKER_02: And she said, basically, 10% of courses are kind of these fun community one-offs, and about 90% are repeats.
+[2375.6s] SPEAKER_02: So...
+[2376.7s] SPEAKER_02: On those occasions, though, when we do a brand new course, maybe, you know, if Darren wants to teach something about cross-country skiing or AI or painting or something, how do we, how do you guys do a new course code?
+[2392.3s] SPEAKER_03: So what I have done is I have pulled up the complete last three years data.
+[2399.6s] SPEAKER_03: Okay.
+[2400.3s] SPEAKER_03: And I have with me, like, all the course codes that have ever been used.
+[2405.1s] SPEAKER_03: Like any sort of index that have ever been offered.
+[2408.8s] SPEAKER_02: Okay.
+[2409.3s] SPEAKER_03: So for example, like this year, these were the courses that came new.
+[2417.2s] SPEAKER_02: Okay.
+[2419.5s] SPEAKER_02: So if you had a new course, like if we wanted to do a second level course, you would just take the next number from that list and you'd do it and you'd kind of track it in Excel?
+[2431.5s] SPEAKER_03: Yeah.
+[2432.1s] SPEAKER_03: So that's what I'm doing for now.
+[2433.7s] SPEAKER_03: I know it's not good because like me and Jill, we talked, we were not happy with those extra codes called ABCD.
+[2442.9s] SPEAKER_03: But then we talked once how you want to redo, but we never got any.
+[2449.6s] SPEAKER_03: like quality feedback on what their process is.
+[2453.6s] SPEAKER_03: Because what I have seen in other organizations is like they always have like 1000 for level one, 2000 for level two, 3000 for level three.
+[2467.0s] SPEAKER_03: That's how they do so that it gets easier as soon as you see the code, like what level you're referring to.
+[2473.8s] SPEAKER_03: But since nothing went through, so for now, what I did is I have my old codes.
+[2480.2s] SPEAKER_03: I just check if it has been ever done.
+[2482.7s] SPEAKER_03: So like, so if it's photography, I'll just do a control F, write the word photography and see if it comes up or not.
+[2491.3s] SPEAKER_03: If it's not coming up and then I never do the complete search title because it changes a lot.
+[2498.4s] SPEAKER_03: Like for sometimes it was like,
+[2501.2s] SPEAKER_03: level one Spanish for travelers.
+[2503.2s] SPEAKER_03: The next time it work comes level one Spanish for fun, but it's exactly the same.
+[2510.0s] SPEAKER_03: It just depends.
+[2510.8s] SPEAKER_03: It's the same thing.
+[2511.7s] SPEAKER_03: Different, different.
+[2513.3s] SPEAKER_03: We have six coordinators.
+[2514.9s] SPEAKER_03: They sometimes have like one word change.
+[2518.2s] SPEAKER_03: So I'd rather have like that level one in Spanish because that would be my go-to to look.
+[2525.2s] SPEAKER_02: Right.
+[2525.6s] SPEAKER_02: So, um,
+[2528.9s] SPEAKER_02: Just making sure I'm understanding this.
+[2532.0s] SPEAKER_02: So you get different, differing course titles when they say, hey, there's a new course or they're submitting the mock form.
+[2538.8s] SPEAKER_02: They have differing course titles from different chords.
+[2546.7s] SPEAKER_02: And then you basically go and have to... Do a manual search, yeah.
+[2555.8s] SPEAKER_02: Equals doing...
+[2557.0s] SPEAKER_03: manual search for existing code.
+[2562.4s] SPEAKER_03: And then there are certain courses that have.
+[2564.7s] SPEAKER_00: I can shed some light on those letters.
+[2569.1s] SPEAKER_00: I'll just paste it in.
+[2572.2s] SPEAKER_00: Because it looks like things have changed since then.
+[2577.8s] SPEAKER_00: but I was the originator of the letters, I believe, when we implemented CEREG.
+[2584.8s] SPEAKER_00: And it was because my friend and mentor, Miria, had a whole series of courses that she wanted to run.
+[2590.8s] SPEAKER_00: So we gave the codes in that series, A, B, C, D, and so on.
+[2595.0s] SPEAKER_00: And then I think it's just been existing codes have been reused for new courses or different named changes to courses or whatever.
+[2608.1s] SPEAKER_00: So it hasn't, it's evolved away from the original intent, which was not hard coded anywhere and was just me deciding what numbers to give courses at the time that we implemented it for courses in a series.
+[2623.3s] SPEAKER_03: Yeah, I think we're still doing the series one as an ABCD.
+[2629.1s] SPEAKER_03: So like, and that's usually happens in learning in retirement because there is like one series of book reading.
+[2635.3s] SPEAKER_03: So they do two books every term.
+[2639.3s] SPEAKER_03: So like having 10 codes for different 10 terms does not make sense for that.
+[2644.5s] SPEAKER_03: Like we are okay to have like a series for the first term B for the next two books.
+[2651.9s] SPEAKER_02: Okay.
+[2652.8s] SPEAKER_02: There, and your system's still in use.
+[2656.6s] SPEAKER_03: And then also, one thing that I have observed, and then again I have requested, is like having a more uniform course description.
+[2667.9s] SPEAKER_03: Because sometimes they have different instructors, which is totally understandable.
+[2673.2s] SPEAKER_03: But having that creates a multiple course for one course.
+[2678.6s] SPEAKER_03: Because then they put meet the instructor.
+[2681.8s] SPEAKER_03: So the same instructor for the same code is not in Nelson.
+[2686.5s] SPEAKER_03: So I'm trying to push that also out.
+[2688.7s] SPEAKER_03: Like we need to have more uniform course descriptions, not including instructors in it.
+[2696.7s] SPEAKER_02: So the reason that they're wildly different is because their course description isn't just the description of the course, it's the course plus the instructor.
+[2705.0s] SPEAKER_03: Yeah.
+[2705.5s] SPEAKER_00: It's the information they want to display to prospective students.
+[2712.4s] SPEAKER_03: So we need to have a little bit more uniformity because in order to have a uniform code, there's a lot of other things that need to change.
+[2726.4s] SPEAKER_02: Okay.
+[2726.5s] SPEAKER_02: Wow.
+[2727.0s] SPEAKER_02: Lots of really, really, really awesome info.
+[2737.4s] SPEAKER_00: Just a couple of quick findings about that rooms not appearing issue.
+[2744.0s] SPEAKER_00: So CEREG is pulling from SRS course maintenance tables, which I think reference facilities inventory system tables in some way.
+[2755.7s] SPEAKER_00: And that example of the Silver King classroom block room 110 doesn't exist in the room bookings room maintenance or in the facility's inventory.
+[2770.7s] SPEAKER_00: So if it gets populated at the very beginning, I'd expect it should come through to the end.
+[2775.8s] SPEAKER_00: But all of that is kind of a TBD for integrations with any new system.
+[2782.8s] SPEAKER_03: Yeah, and that's not just with CE Ridge.
+[2785.0s] SPEAKER_03: Like I also do scheduling for Casper campus.
+[2788.4s] SPEAKER_00: Yeah, like if it doesn't exist in those tables, it won't exist in SRS or in like room finder kind of searches.
+[2796.0s] SPEAKER_03: Yeah, they just converted one room as A and B, but in SRS, it was still showing as just one room.
+[2803.1s] SPEAKER_03: So it sometimes gets hard on the list and the SRS.
+[2808.2s] SPEAKER_02: We're not maintaining our facilities inventory, essentially, so that when you go to say, this class will be in this room, we don't have an accurate or up-to-date list of what our rooms actually are, what our facilities actually are.
+[2822.1s] SPEAKER_02: Like with our...
+[2823.6s] SPEAKER_02: project over the summer where they we used to have two labs like b15 and b16 and they took down the wall to make one big lab now you know i don't know if they have updated their the room inventory after that um so that is a really good thing so like for castle that i know because i always ask heather for an updated list every term
+[2848.9s] SPEAKER_03: because they have because they have like an audit list so because we need to have those classroom size and how much their capacity is so do you um you said you asked heather for a list every every term from last two terms i've been asking because i'm covering up for penny okay or um jory
+[2879.2s] SPEAKER_03: every term just for for like capacity planning yeah because with academic it's more of a capacity issue and then certain rooms need certain level of equipment so we need to know what room has what of course so when you ask her for that what does she give you she just gave me her excel list where they were doing like an audit
+[2906.7s] SPEAKER_02: Okay, this is good.
+[2908.0s] SPEAKER_03: So that would have like how many table chairs, what's the max capacity of students that can sit in it.
+[2915.0s] SPEAKER_02: Okay.
+[2917.3s] SPEAKER_02: So that helps you be able to plan.
+[2919.0s] SPEAKER_02: You have Heather's list.
+[2920.2s] SPEAKER_02: She gives you the most up-to-date list and then you're able to say, okay, this class needs to go in this room because it has the right equipment.
+[2929.3s] SPEAKER_02: Okay, super helpful.
+[2935.2s] SPEAKER_02: We're just about...
+[2937.0s] SPEAKER_02: out of time um I'm probably gonna have some follow-up questions I'd love to meet with you guys again um around other parts of the process but I've got to like digest all of today's information first but this was like so super helpful um so super helpful and awesome um do you guys have any um final any final words questions thoughts before we go um
+[2970.7s] SPEAKER_03: Did I tell you about the cancellation as well?
+[2973.2s] SPEAKER_03: Or do you want to do it right now?
+[2975.1s] SPEAKER_03: It's just like one.
+[2977.4s] SPEAKER_02: I'd like to go through.
+[2979.1s] SPEAKER_02: So I'm kind of looking at between you and the coordinators kind of different parts of the process.
+[2987.2s] SPEAKER_02: I do want to talk about course cancellation and refunds.
+[2991.4s] SPEAKER_02: That will probably I'm going to save that for our next session.
+[2995.1s] SPEAKER_02: Um, but I'll try and book some time with you guys maybe next week to talk about, um, cause that is looking at my big process map.
+[3004.9s] SPEAKER_02: Um, you know, somebody adds it, that kind of, we talked about wait lists, which is amazing actually getting into the course and wait listing.
+[3014.2s] SPEAKER_02: And then what happens with cancellations?
+[3017.8s] SPEAKER_02: Um, maybe we can do that next time.
+[3022.4s] SPEAKER_02: All right.
+[3023.9s] SPEAKER_02: Okay.
+[3024.3s] SPEAKER_02: I'm just going to make a note for myself.
+[3027.2s] SPEAKER_02: Yeah, so cancellations.
+[3032.8s] SPEAKER_02: Yeah, that would be fantastic.
+[3036.7s] SPEAKER_00: Just one follow-up question about the wait lists.
+[3042.9s] SPEAKER_00: So you showed us the screen of where it's set for what does show up.
+[3048.9s] SPEAKER_00: But do you ever change it back so that waitlists are not allowed?
+[3053.0s] SPEAKER_00: Or do you use the waitlist functions within SRS in some way when it does show up and they're allowed?
+[3062.0s] SPEAKER_00: Sorry, I didn't get you.
+[3066.7s] SPEAKER_00: My previous experience and Angel's experience with CE course waitlists were that they're handled manually on paper in a binder somewhere.
+[3076.1s] SPEAKER_00: So when we have that flag on, it's either on the intake or on the inventory in SRS that says allow waitlist.
+[3084.1s] SPEAKER_00: Do you ever turn that off if you notice it so that it does not appear for that waitlist or possible?
+[3090.1s] UNKNOWN: Yes.
+[3090.2s] SPEAKER_03: Yeah, so anytime I'm creating a new course, like now I know like certain courses will automatically have it as off.
+[3098.5s] SPEAKER_03: In case of any new course that I have created, it's definitely coming as yes.
+[3105.8s] SPEAKER_03: So it's now part of my habit.
+[3108.4s] SPEAKER_03: Like as soon as I'm done with a course, I just do a thorough check just for my own self.
+[3113.7s] SPEAKER_03: And if I see it, yes, I just turn it off.
+[3116.1s] SPEAKER_03: No, because I know CDH does not want any waitlist.
+[3121.2s] SPEAKER_02: Okay, interesting.
+[3122.8s] SPEAKER_02: So any new courses you create, the waitlist possible flag is on and you go and turn it off.
+[3130.1s] SPEAKER_01: Yeah.
+[3132.1s] SPEAKER_03: But then when I do an off, it's to that particular index.
+[3135.9s] SPEAKER_03: If I create 10 courses for the new code, I have to do a no for every 10 particular index.
+[3144.1s] SPEAKER_01: I'm not able to do it on the inventory side.
+[3157.3s] SPEAKER_02: Interesting.
+[3157.8s] SPEAKER_02: Really interesting.
+[3159.2s] SPEAKER_03: Yeah, that's a puzzle I'm trying to solve.
+[3163.2s] SPEAKER_03: What I asked, I looked at the back tables with CE Ridge and tried to map where it's coming from, but I wasn't able to get anything.
+[3175.3s] SPEAKER_00: Fast 1002 G in SRS has a waitlist of zero.
+[3187.2s] SPEAKER_00: So I wonder if it's an issue of the CE schema tables don't have any equivalent field that they reference?
+[3198.3s] SPEAKER_00: Yes, they don't have.
+[3201.0s] SPEAKER_00: So I would imagine that could be solved by turning off the waitlist at the inventory level for the appropriate variant of it, because there are different variants that come through from CE versus creating new variants in SRS.
+[3223.0s] SPEAKER_00: And that's something that the intake should inherit from the inventory.
+[3233.2s] SPEAKER_02: All right.
+[3235.5s] SPEAKER_02: Lots of info.
+[3236.6s] SPEAKER_02: Thank you guys so much.
+[3238.4s] SPEAKER_02: So, so, so appreciate your time.
+[3240.0s] SPEAKER_02: I will book something for us for next week to look at the next chunk of the process.
+[3247.9s] SPEAKER_02: Sure.
+[3249.9s] SPEAKER_02: Thanks, guys.
+[3252.1s] SPEAKER_02: Thank you.
+[3254.3s] SPEAKER_01: Bye.
+[3254.9s] SPEAKER_01: Bye.
+[3255.0s] SPEAKER_01: Bye.

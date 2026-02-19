@@ -1,0 +1,164 @@
+{
+  "models": {
+    "mistralai-mistral-7b-instruct-v0.3-default": {
+      "model_id": "mistralai/mistral-7b-instruct-v0.3",
+      "display_name": "Mistral 7B Instruct v0.3 (default)",
+      "enabled": true,
+      "temperature": 0.8,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "magistral-small-2509-default": {
+      "model_id": "magistral-small-2509",
+      "display_name": "Magistral Small 2509 (default)",
+      "enabled": true,
+      "temperature": 0.8,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "qwen3-4b-default": {
+      "model_id": "qwen3-4b",
+      "display_name": "Qwen 3 4B (default)",
+      "enabled": true,
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "qwen3-8b-default": {
+      "model_id": "qwen3-8b",
+      "display_name": "Qwen 3 8B (default)",
+      "enabled": true,
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "qwen3-14b-default": {
+      "model_id": "qwen3-14b",
+      "display_name": "Qwen 3 14B (default)",
+      "enabled": true,
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "qwen-qwen3-32b-default": {
+      "model_id": "qwen/qwen3-32b",
+      "display_name": "Qwen 3 32B (default)",
+      "enabled": true,
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "granite-4.0-h-tiny-default": {
+      "model_id": "granite-4.0-h-tiny",
+      "display_name": "Granite 4.0 Tiny (default)",
+      "enabled": true,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "granite-4.0-h-small-default": {
+      "model_id": "granite-4.0-h-small",
+      "display_name": "Granite 4.0 Small (default)",
+      "enabled": true,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "qwen3-4b-20cb11": {
+      "model_id": "qwen3-4b",
+      "display_name": "Qwen3 4B - temp0",
+      "enabled": true,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "qwen3-4b-3d13c2": {
+      "model_id": "qwen3-4b",
+      "display_name": "Qwen3 4B - temp1",
+      "enabled": true,
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "magistral-small-2509-dc5d16": {
+      "model_id": "magistral-small-2509",
+      "display_name": "Magistral temperature 0",
+      "enabled": true,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "ministral-3-8b-instruct-2512-default": {
+      "model_id": "ministral-3-8b-instruct-2512",
+      "display_name": "Ministral 3 8B Instruct (default)",
+      "enabled": true,
+      "temperature": 0.15,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "ministral-3-8b-reasoning-2512-default": {
+      "model_id": "ministral-3-8b-reasoning-2512",
+      "display_name": "Ministral 3 8B Reasoning (default)",
+      "enabled": true,
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "ministral-3-14b-instruct-2512-default": {
+      "model_id": "ministral-3-14b-instruct-2512",
+      "display_name": "Ministral 3 14B Instruct (default)",
+      "enabled": true,
+      "temperature": 0.15,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "ministral-3-14b-reasoning-2512-default": {
+      "model_id": "ministral-3-14b-reasoning-2512",
+      "display_name": "Ministral 3 14B Reasoning (default)",
+      "enabled": true,
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    },
+    "llama-3.1-8b-instruct-default": {
+      "model_id": "llama-3.1-8b-instruct",
+      "display_name": "Llama 3.1 8B Instruct (default)",
+      "enabled": true,
+      "temperature": 0.6,
+      "top_p": 1.0,
+      "max_tokens": null,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0
+    }
+  }
+}

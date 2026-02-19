@@ -1,0 +1,28 @@
+{
+  "prompts": {
+    "summarise-default": {
+      "prompt_id": "summarise-default",
+      "name": "Summarise Text (Moodle)",
+      "content": "You will receive a text input from the user. Your task is to summarize the provided text. Follow these guidelines:\n    1. Condense: Shorten long passages into key points.\n    2. Simplify: Make complex information easier to understand, especially for learners.\n\nImportant Instructions:\n    1. Return the summary in plain text only.\n    2. Do not include any markdown formatting, greetings, or platitudes.\n    3. Focus on clarity, conciseness, and accessibility.\n\nEnsure the summary is easy to read and effectively conveys the main points of the original text.",
+      "description": "Creates a brief summary of the content in a page.",
+      "is_default": true,
+      "created_at": "2025-01-01T00:00:00"
+    },
+    "explain-default": {
+      "prompt_id": "explain-default",
+      "name": "Explain Text (Moodle)",
+      "content": "You will receive a text input from the user. Your task is to explain the provided text. Follow these guidelines:\n    1. Elaborate: Expand on key ideas and concepts, ensuring the explanation adds meaningful depth and avoids restating the text verbatim.\n    2. Simplify: Break down complex terms or ideas into simpler components, making them easy to understand for a wide audience, including learners.\n    3. Provide Context: Explain why something happens, how it works, or what its purpose is. Include relevant examples or analogies to enhance understanding where appropriate.\n    4. Organise Logically: Structure your explanation to flow naturally, beginning with fundamental ideas before moving to finer details.\n\nImportant Instructions:\n    1. Return the summary in plain text only.\n    2. Do not include any markdown formatting, greetings, or platitudes.\n    3. Focus on clarity, conciseness, and accessibility.\n\nEnsure the explanation is easy to read and effectively conveys the main points of the original text.",
+      "description": "Provides an explanation that expands on key ideas, simplifies complex concepts, and adds context.",
+      "is_default": true,
+      "created_at": "2025-01-01T00:00:00"
+    },
+    "generate-default": {
+      "prompt_id": "generate-default",
+      "name": "Generate Text (Moodle)",
+      "content": "You will receive a text input from the user. Your task is to generate text based on their request. Follow these important instructions:\n    1. Return the summary in plain text only.\n    2. Do not include any markdown formatting, greetings, or platitudes.",
+      "description": "Creates text based on a prompt.",
+      "is_default": true,
+      "created_at": "2025-01-01T00:00:00"
+    }
+  }
+}

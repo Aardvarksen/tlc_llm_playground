@@ -1,0 +1,526 @@
+{
+  "test_items": {
+    "47ed214b": {
+      "test_item_id": "47ed214b",
+      "system_prompt_id": "explain-default",
+      "context_id": "58765113",
+      "created_at": "2026-01-21T08:54:24.825144"
+    },
+    "d3df25a5": {
+      "test_item_id": "d3df25a5",
+      "system_prompt_id": "summarise-default",
+      "context_id": "58765113",
+      "created_at": "2026-01-21T08:54:43.330260"
+    },
+    "87eb2bf3": {
+      "test_item_id": "87eb2bf3",
+      "system_prompt_id": "explain-default",
+      "context_id": "b04b656d",
+      "created_at": "2026-01-21T09:38:30.867283"
+    },
+    "d1e44320": {
+      "test_item_id": "d1e44320",
+      "system_prompt_id": "summarise-default",
+      "context_id": "b04b656d",
+      "created_at": "2026-01-21T09:39:12.281956"
+    },
+    "1937b7a8": {
+      "test_item_id": "1937b7a8",
+      "system_prompt_id": "explain-default",
+      "context_id": "86fe5560",
+      "created_at": "2026-01-22T09:23:48.499641"
+    },
+    "5e153ef0": {
+      "test_item_id": "5e153ef0",
+      "system_prompt_id": "summarise-default",
+      "context_id": "86fe5560",
+      "created_at": "2026-01-22T09:23:57.178206"
+    }
+  },
+  "results": {
+    "87eb2bf3|qwen3-8b|e67e12": {
+      "result_key": "87eb2bf3|qwen3-8b|e67e12",
+      "test_item_id": "87eb2bf3",
+      "model_id": "qwen3-8b",
+      "model_display_name": "Qwen 3 8B (default)",
+      "params": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "e67e12",
+      "system_prompt_name": "Explain Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=2701",
+      "context_length": 258,
+      "output": "<think>\nOkay, let's tackle this query. The user provided the text about Indigenization and the plan from Selkirk College. They want an explanation following specific guidelines.\n\nFirst, I need to understand what \"Indigenization\" means here. From the text, it seems related to integrating Indigenous perspectives into the college's operations. The plan aims for truth, reconciliation, decolonization, and Indigenization. So, I should explain these terms in simple language.\n\nThe user wants elaboration without restating verbatim. I need to break down complex ideas like decolonization and reconciliation. Maybe compare decolonization to removing harmful practices and replacing them with respectful ones. Reconciliation could be about healing past wrongs through collaboration.\n\nSimplifying terms is key. For example, Indigenization isn't just about adding Indigenous content but transforming the institution's values and practices. Providing context on why this matters—like acknowledging historical injustices and promoting equity—will help readers understand the purpose.\n\nOrganizing logically: start with defining Indigenization, then explain the plan's goals, mention the four pillars (truth, reconciliation, etc.), and discuss how it benefits everyone. Use examples like curriculum changes or partnerships with Indigenous communities to make it relatable.\n\nCheck for clarity and conciseness. Avoid jargon. Make sure each part flows naturally from basic concepts to more detailed aspects. Ensure the summary is plain text without any markdown, as per instructions.\n</think>\n\nThe Indigenization Plan at Selkirk College outlines a strategy to integrate Indigenous knowledge, perspectives, and practices into the institution’s operations, aiming to address historical injustices and create a more inclusive environment. This initiative seeks to move beyond surface-level inclusion by fundamentally transforming how the college engages with Indigenous communities and learners. Key goals include fostering truth about past harms, promoting reconciliation through respectful collaboration, decolonizing institutional practices that perpetuate inequality, and actively embedding Indigenous ways of knowing into education and decision-making. The plan emphasizes partnership with Indigenous peoples, ensuring their voices shape policies, curricula, and campus culture. By doing so, Selkirk College aims to build a future where all learners and staff benefit from a more equitable, culturally responsive, and socially just institution.",
+      "output_length": 2531,
+      "ttft": 2.285695791244507,
+      "total_time": 4.3135576248168945,
+      "token_count": 449,
+      "run_at": "2026-01-23T13:24:21.963274"
+    },
+    "87eb2bf3|qwen3-14b|e67e12": {
+      "result_key": "87eb2bf3|qwen3-14b|e67e12",
+      "test_item_id": "87eb2bf3",
+      "model_id": "qwen3-14b",
+      "model_display_name": "Qwen 3 14B (default)",
+      "params": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "e67e12",
+      "system_prompt_name": "Explain Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=2701",
+      "context_length": 258,
+      "output": "<think>\nOkay, let me start by understanding the user's query. They provided a text about Selkirk College's Indigenization Plan and want an explanation based on their guidelines. The key points are elaborating on the plan, simplifying complex terms, providing context, and organizing logically.\n\nFirst, I need to explain what Indigenization means here. It's not just adding Indigenous content but transforming the institution. Maybe use an analogy like a garden needing nurturing. Then, mention truth and reconciliation as part of addressing historical wrongs, which is important for context.\n\nNext, simplify terms like decolonization. Explain it as removing barriers and respecting Indigenous ways of knowing. The framework part should be broken down into actionable steps: curriculum changes, partnerships with communities, support for Indigenous students. Examples would help, like including Indigenous perspectives in courses or creating safe spaces on campus.\n\nContext-wise, why is this plan important? It's about creating an inclusive environment where everyone can thrive, not just adding diversity but deep change. The time frame 2019-2024 shows a commitment to long-term goals.\n\nOrganizing logically: Start with the purpose of the plan, then break down each component (truth, reconciliation, Indigenization, decolonization), explain how they work together, and the outcomes like inclusive learning and stronger community ties. Avoid jargon and keep it accessible for all readers.\n</think>\n\nSelkirk College's Indigenization Plan 2019–2024 aims to integrate Indigenous perspectives, values, and knowledge into all aspects of the institution’s operations, fostering a more inclusive and equitable environment for students, staff, and communities. The plan emphasizes truth-telling about historical injustices faced by Indigenous peoples, promoting reconciliation through meaningful partnerships with local First Nations and Métis communities. Indigenization involves rethinking educational practices to reflect Indigenous ways of knowing, teaching, and learning, such as incorporating traditional knowledge into curricula or using land-based pedagogies that connect education to the natural environment. Decolonization efforts focus on dismantling systemic barriers that have marginalized Indigenous voices, including revising policies to prioritize equity and ensuring representation in leadership and decision-making. By embedding these principles into the college’s culture, the plan seeks to create a learning community where Indigenous and non-Indigenous people collaborate respectfully, addressing historical imbalances while building a shared future rooted in mutual respect and understanding.",
+      "output_length": 2705,
+      "ttft": 2.276733636856079,
+      "total_time": 6.146524667739868,
+      "token_count": 487,
+      "run_at": "2026-01-23T13:24:28.113422"
+    },
+    "87eb2bf3|qwen/qwen3-32b|e67e12": {
+      "result_key": "87eb2bf3|qwen/qwen3-32b|e67e12",
+      "test_item_id": "87eb2bf3",
+      "model_id": "qwen/qwen3-32b",
+      "model_display_name": "Qwen 3 32B (default)",
+      "params": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "e67e12",
+      "system_prompt_name": "Explain Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=2701",
+      "context_length": 258,
+      "output": "<think>\nOkay, the user wants me to explain this text about Selkirk College's Indigenization Plan. Let me start by reading it carefully.\n\nThe title is \"Our Journey Together: Land, Life, Learning: Indigenization Plan 2019–2024.\" The main goal here seems to be about incorporating Indigenous perspectives into the college's operations and education. They mention supporting truth, reconciliation, Indigenization, and decolonization. \n\nFirst, I need to break down what each of these terms means in this context. Truth and reconciliation likely refer to acknowledging past wrongs done to Indigenous peoples, like residential schools, which is part of Canada's history. Reconciliation would involve working towards better relationships between Indigenous and non-Indigenous communities.\n\nIndigenization probably means integrating Indigenous knowledge systems, languages, and cultures into the college's programs and practices. Decolonization goes further by challenging colonial structures and promoting self-determination for Indigenous peoples. \n\nThe plan is a framework to create a stronger future for all learners and staff. I should explain that this isn't just about adding Indigenous content but transforming the educational environment. Maybe using examples like curriculum changes, hiring Indigenous faculty, or land acknowledgment practices.\n\nI also need to simplify complex terms so it's accessible. For instance, decolonization can be explained as undoing systems of oppression rooted in colonialism. Providing context is important here—why Selkirk College chose this path and the broader societal need for these actions.\n\nThey might want an example. Like how instead of just having a guest speaker on Indigenous topics, the college could develop courses taught by Indigenous educators that cover traditional knowledge alongside academic subjects. That shows integration rather than tokenism.\n\nI should structure it logically: start with defining terms, then explain each component (truth, reconciliation, etc.), provide examples, and conclude with the purpose of the plan. Avoid jargon to keep it clear for a general audience, including learners who might be new to these concepts.\n</think>\n\nThe text outlines Selkirk College's five-year Indigenization Plan (2019–2024), which aims to integrate Indigenous perspectives into all aspects of the institution while advancing reconciliation and decolonization. Key elements include:  \n- **Truth**: Acknowledging historical injustices faced by Indigenous peoples, such as colonization and residential schools, to foster awareness and accountability.  \n- **Reconciliation**: Building meaningful relationships between the college, Indigenous communities, and non-Indigenous stakeholders through mutual respect and collaboration.  \n- **Indigenization**: Embedding Indigenous knowledge systems, languages, and cultural practices into curricula, campus culture, and institutional policies. This might involve hiring more Indigenous faculty, revising course content to include traditional teachings, or supporting land-based learning.  \n- **Decolonization**: Challenging colonial structures within education by centering Indigenous worldviews and promoting self-determination. For example, this could mean shifting from Eurocentric frameworks to co-developed programs with First Nations communities.  \n\nThe plan seeks to create a more inclusive environment for both students and staff, ensuring that learning experiences reflect the contributions and resilience of Indigenous peoples while addressing systemic inequities in education.",
+      "output_length": 3579,
+      "ttft": 5.487830877304077,
+      "total_time": 27.691004037857056,
+      "token_count": 648,
+      "run_at": "2026-01-23T13:24:57.859681"
+    },
+    "87eb2bf3|granite-4.0-h-tiny|547ed9": {
+      "result_key": "87eb2bf3|granite-4.0-h-tiny|547ed9",
+      "test_item_id": "87eb2bf3",
+      "model_id": "granite-4.0-h-tiny",
+      "model_display_name": "Granite 4.0 Tiny (default)",
+      "params": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "547ed9",
+      "system_prompt_name": "Explain Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=2701",
+      "context_length": 258,
+      "output": "The \"Indigenization\" plan from 2019 to 2024 at Selkirk College aims to foster an environment that respects and integrates Indigenous knowledge, cultures, and perspectives into the educational experience. This initiative is grounded in principles of truth, reconciliation, and decolonization, recognizing the importance of acknowledging historical injustices and working towards a more equitable future for Indigenous learners and staff.\n\nThe plan serves as a roadmap for creating a supportive learning environment that honors Indigenous ways of knowing and being. It seeks to enhance educational outcomes by incorporating Indigenous content into curricula, promoting cultural awareness, and fostering relationships with local Indigenous communities. By doing so, Selkirk College not only enriches the academic experience but also contributes to broader societal goals of reconciliation and social justice.\n\nIn essence, this initiative is about building a more inclusive institution where Indigenous voices are valued and respected, thereby supporting a holistic approach to education that benefits all students and staff.",
+      "output_length": 1121,
+      "ttft": 2.284233570098877,
+      "total_time": 2.5613906383514404,
+      "token_count": 187,
+      "run_at": "2026-01-23T13:25:02.453951"
+    },
+    "87eb2bf3|granite-4.0-h-small|547ed9": {
+      "result_key": "87eb2bf3|granite-4.0-h-small|547ed9",
+      "test_item_id": "87eb2bf3",
+      "model_id": "granite-4.0-h-small",
+      "model_display_name": "Granite 4.0 Small (default)",
+      "params": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "547ed9",
+      "system_prompt_name": "Explain Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=2701",
+      "context_length": 258,
+      "output": "The text introduces \"Our Journey Together: Land, Life, Learning,\" which is an indigenization plan spanning from 2019 to 2024. This plan aims to support truth, reconciliation, Indigenization, and decolonization at Selkirk College by providing a structured framework that fosters a stronger future for all learners and staff.\n\n1. **Indigenization**: The term refers to the process of integrating Indigenous knowledge, perspectives, and practices into various aspects of society, including education. It involves recognizing and respecting Indigenous cultures and histories while working towards healing historical injustices and promoting inclusivity.\n\n2. **Truth and Reconciliation**: These concepts are crucial in addressing past wrongs committed against Indigenous peoples. Truth involves acknowledging the history of colonization, residential schools, and other forms of oppression faced by Indigenous communities. Reconciliation is about building respectful relationships between Indigenous and non-Indigenous peoples through mutual understanding and actions that promote healing.\n\n3. **Decolonization**: This process seeks to dismantle colonial structures and ideologies that have marginalized Indigenous peoples. It involves challenging dominant narratives and empowering Indigenous voices, knowledge systems, and ways of life. Decolonization aims to create a more equitable society where Indigenous peoples can thrive on their own terms.\n\n4. **Selkirk College**: The plan is specifically tailored for Selkirk College, an educational institution that recognizes the importance of integrating Indigenous perspectives into its curriculum and operations. By doing so, it aims to provide a supportive environment that respects and values Indigenous cultures while promoting academic success for all students and staff.\n\n5. **Framework for Future Success**: The indigenization plan serves as a roadmap for Selkirk College to achieve its goals related to truth, reconciliation, Indigenization, and decolonization. It outlines strategies, initiatives, and actions that the college will undertake over the specified period (2019–2024) to create meaningful change within its community.\n\nIn summary, \"Our Journey Together: Land, Life, Learning\" is a comprehensive plan designed to foster an inclusive educational environment at Selkirk College by embracing Indigenous knowledge and perspectives. It emphasizes truth-telling about historical injustices, promoting reconciliation between different cultural groups, challenging colonial legacies through decolonization efforts, and ultimately creating a brighter future for everyone involved in the college community.",
+      "output_length": 2659,
+      "ttft": 3.8334248065948486,
+      "total_time": 7.22241735458374,
+      "token_count": 463,
+      "run_at": "2026-01-23T13:25:09.679755"
+    },
+    "1937b7a8|qwen3-8b|e67e12": {
+      "result_key": "1937b7a8|qwen3-8b|e67e12",
+      "test_item_id": "1937b7a8",
+      "model_id": "qwen3-8b",
+      "model_display_name": "Qwen 3 8B (default)",
+      "params": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "e67e12",
+      "system_prompt_name": "Explain Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=3768",
+      "context_length": 735,
+      "output": "<think>\nOkay, let's see. The user provided a text about Selkirk College's Sustainability Plan. They want me to explain it following specific guidelines.\n\nFirst, I need to elaborate on key ideas. The plan is future-focused, action-oriented, and collaborative. That means they're not just talking about sustainability in theory but are actively working on it with others. Also, integrating sustainability into various aspects like learning, services, operations, etc. So that's a broad approach.\n\nNext, simplify complex terms. Terms like \"mitigation\" and \"adaptation\" might need explaining. Mitigation is reducing emissions, adaptation is preparing for climate impacts. Maybe use examples like renewable energy for mitigation or building upgrades for adaptation.\n\nProvide context: Why is this important? Because climate change affects everyone, and the college wants to prepare students and staff to handle these challenges. They want to build resilience, which means making sure the campus can withstand future issues.\n\nOrganize logically. Start with the main goal of the plan, then break down each component—learning, operations, workforce development. Then explain mitigation and adaptation strategies. Finally, mention the outcome: informed citizens ready for global changes.\n\nCheck if I need to avoid markdown and keep it plain text. Also, ensure clarity and conciseness. Maybe start by stating the college's commitment, then outline their approach in different areas, explain climate action terms, and conclude with the purpose of empowering people.\n</think>\n\nSelkirk College’s Sustainability Plan outlines a proactive strategy to address environmental challenges by combining education, operational changes, and community collaboration. The plan emphasizes preparing students and staff to tackle global issues like climate change through practical actions. Key elements include integrating sustainability into academic programs, campus operations (e.g., reducing energy use), and workforce training. The college aims to both mitigate climate impacts—like cutting greenhouse gas emissions by adopting renewable energy or improving efficiency—and adapt to future changes, such as upgrading infrastructure to withstand extreme weather. This approach fosters resilience while equipping individuals with knowledge and skills to drive meaningful environmental change in their communities.",
+      "output_length": 2387,
+      "ttft": 2.254021644592285,
+      "total_time": 4.360887050628662,
+      "token_count": 416,
+      "run_at": "2026-01-23T13:25:16.069295"
+    },
+    "1937b7a8|qwen3-14b|e67e12": {
+      "result_key": "1937b7a8|qwen3-14b|e67e12",
+      "test_item_id": "1937b7a8",
+      "model_id": "qwen3-14b",
+      "model_display_name": "Qwen 3 14B (default)",
+      "params": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "e67e12",
+      "system_prompt_name": "Explain Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=3768",
+      "context_length": 735,
+      "output": "<think>\nOkay, let me start by understanding what the user is asking for. They want an explanation of Selkirk College's Sustainability Plan based on the provided text. The guidelines mention elaborating, simplifying, providing context, and organizing logically.\n\nFirst, I need to break down the key points from the original text. The main ideas are future-focused approach, integrating sustainability into various aspects (learning, services, operations), climate action with both adaptation and mitigation, building resilience, and empowering students and employees as informed citizens.\n\nNow, elaborating on these: \"future-focused\" means looking ahead to long-term impacts. I should explain how this applies to education and operations. Integration into learning might involve courses or projects that address sustainability issues. Operations could include energy use or waste management. \n\nFor climate action, adaptation measures might be things like infrastructure changes to handle extreme weather, while mitigation would be reducing emissions through renewable energy or efficient systems. Resilience here is about preparing for unavoidable climate impacts.\n\nEmpowering students and employees involves education and skill development. Maybe examples like workshops, certifications, or community projects that apply sustainability principles. \n\nSimplifying complex terms: \"greenhouse gas emissions\" can be explained as gases that trap heat in the atmosphere, contributing to global warming. \"Resilience\" could be compared to how a building is designed to withstand storms.\n\nContext-wise, why is this important? Climate change affects everyone, so the college's plan addresses both immediate and long-term challenges. It's not just about reducing emissions but also preparing for changes that can't be prevented. \n\nOrganizing logically: Start with the overall goal of sustainability, then move into how they're integrating it across different areas (education, operations), discuss climate action strategies, and end with the part about empowering individuals.\n\nI need to make sure I don't copy phrases from the original text but rephrase them in simpler terms. Also, avoid jargon. Check that each section flows naturally, building from general concepts to specific examples. \n\nWait, did I miss anything? The original mentions \"collaborative approach,\" which is about working with others—students, staff, maybe local communities or partners. That should be included as part of the integration into campus culture.\n\nAlso, workforce development might involve training employees in sustainable practices or offering programs that lead to careers in green industries. \n\nExamples: For climate adaptation, maybe installing solar panels (mitigation) and creating drought-resistant landscapes (adaptation). Resilience could involve emergency preparedness plans for extreme weather events.\n\nPutting it all together now, ensuring each part is clear and follows the guidelines.\n</think>\n\nSelkirk College’s Sustainability Plan outlines a comprehensive strategy to address environmental challenges through proactive measures that prioritize long-term impact. The plan emphasizes collaboration across all aspects of the college—education, operations, community engagement, and workforce development—to ensure sustainability becomes a core value. By integrating sustainability into curricula, students gain practical knowledge about ecological issues, while staff and faculty contribute to reducing the institution’s environmental footprint through energy-efficient practices, waste reduction, and sustainable resource management. Climate action is central, focusing on two key areas: mitigating greenhouse gas emissions (e.g., transitioning to renewable energy sources) and adapting to climate-related risks, such as extreme weather or resource scarcity, by strengthening infrastructure and planning for resilience. The college also aims to empower students and employees to act as advocates for sustainability in their personal and professional lives, equipping them with the skills to drive systemic change globally. This approach reflects a recognition that environmental challenges require both immediate action and long-term vision, blending education, innovation, and community responsibility to create a more sustainable future.",
+      "output_length": 4325,
+      "ttft": 2.3147830963134766,
+      "total_time": 8.223517417907715,
+      "token_count": 737,
+      "run_at": "2026-01-23T13:25:24.296149"
+    },
+    "1937b7a8|qwen/qwen3-32b|e67e12": {
+      "result_key": "1937b7a8|qwen/qwen3-32b|e67e12",
+      "test_item_id": "1937b7a8",
+      "model_id": "qwen/qwen3-32b",
+      "model_display_name": "Qwen 3 32B (default)",
+      "params": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "e67e12",
+      "system_prompt_name": "Explain Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=3768",
+      "context_length": 735,
+      "output": "<think>\nOkay, let's see. The user wants me to explain the provided text from Selkirk College's Sustainability Plan. First, I need to understand what the main points are here.\n\nThe plan mentions a future-focused, action-oriented approach that's collaborative. So they're not just planning but taking real steps and working with others. They want sustainability integrated into various areas like student learning, services, operations, workforce development, and campus culture. That means it's not just about the environment but also how the college operates and educates people.\n\nThen there's climate action, including adapting to projected impacts (like preparing for changes caused by climate) and reducing greenhouse gas emissions (mitigation). They want resilience too. Also, they're supporting students and employees to be informed citizens with knowledge and skills needed for global transformations.\n\nNow, I need to elaborate on these points. For example, \"future-focused\" means long-term planning, considering future generations. Collaborative approach could involve partnerships with local communities or other organizations. Integrating sustainability into learning might mean courses that teach sustainable practices. Operations could include energy-efficient buildings or waste reduction programs.\n\nAdapting to climate impacts might be things like updating infrastructure to handle extreme weather. Mitigation strategies would be reducing emissions through renewable energy, public transport incentives, etc. Resilience here is about making the college and community able to withstand environmental changes.\n\nSupporting students and employees involves education and training so they can contribute to sustainability beyond the college. Maybe workshops or certifications related to green skills.\n\nI need to simplify terms like \"mitigation\" and \"resilience.\" Mitigation is reducing causes of climate change, while resilience is being prepared for its effects. Context-wise, why does Selkirk College do this? To lead by example in education and community, preparing a sustainable future workforce, addressing global challenges locally.\n\nExamples: Maybe they have solar panels on campus (mitigation), or drought-resistant landscaping (adaptation). Workforce development could mean offering courses in renewable energy technology. Campus culture might involve sustainability initiatives like zero-waste events.\n\nThe structure should start with the overall approach, then break down each component (education, operations, climate action) before moving to supporting their community through education and skills.\n</think>\n\nSelkirk College’s Sustainability Plan outlines a comprehensive strategy to address environmental challenges by embedding sustainability into every aspect of its operations and education. The plan emphasizes proactive measures that prioritize long-term goals while fostering collaboration among students, staff, and the broader community. Key areas include integrating sustainability into curricula, ensuring campus practices reduce environmental impact (e.g., lowering greenhouse gas emissions through energy efficiency or renewable energy), and preparing infrastructure to adapt to climate-related risks like extreme weather events. By doing so, the college aims not only to minimize its ecological footprint but also to build resilience against future disruptions.\n\nThe initiative also focuses on education as a tool for societal change. Students and employees are encouraged to develop skills in sustainable practices—such as resource management or green technology—and critical thinking about global issues like climate justice. This approach aligns with broader efforts to empower individuals to drive systemic shifts toward sustainability beyond the college setting. For example, workforce development programs might train students in renewable energy fields, while campus culture initiatives could reduce waste through recycling campaigns or sustainable food systems. The plan reflects a recognition that addressing environmental challenges requires both immediate action (like emission reductions) and long-term cultural change, positioning Selkirk College as a model for educational institutions aiming to lead sustainability efforts.",
+      "output_length": 4272,
+      "ttft": 5.813176393508911,
+      "total_time": 30.402541637420654,
+      "token_count": 703,
+      "run_at": "2026-01-23T13:25:56.727897"
+    },
+    "1937b7a8|granite-4.0-h-tiny|547ed9": {
+      "result_key": "1937b7a8|granite-4.0-h-tiny|547ed9",
+      "test_item_id": "1937b7a8",
+      "model_id": "granite-4.0-h-tiny",
+      "model_display_name": "Granite 4.0 Tiny (default)",
+      "params": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "547ed9",
+      "system_prompt_name": "Explain Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=3768",
+      "context_length": 735,
+      "output": "The text discusses Selkirk College's commitment to sustainability through a comprehensive plan that aims to address various interconnected environmental challenges facing society today. The college adopts a forward-thinking, proactive, and cooperative strategy in tackling these issues.\n\nCentral to this approach is the integration of sustainability principles into multiple facets of college life, including education, operations, workforce development, and campus culture. This holistic integration ensures that sustainability becomes an intrinsic part of the college's ethos and daily activities.\n\nMoreover, the plan emphasizes climate action by incorporating both adaptation strategies to mitigate projected climate impacts and mitigation efforts aimed at reducing greenhouse gas emissions. This dual approach reflects a recognition of the necessity to build resilience against environmental changes while actively working towards lowering carbon footprints.\n\nAdditionally, Selkirk College aims to cultivate informed citizens among its students and employees. By equipping them with essential knowledge, skills, values, and attitudes, the college seeks to inspire individuals capable of driving significant global transformations in sustainability practices and policies.\n\nOverall, this plan underscores a commitment not only to environmental stewardship but also to fostering an educational environment that prepares future generations to meet the complex challenges of our time.",
+      "output_length": 1484,
+      "ttft": 2.3051538467407227,
+      "total_time": 2.5511093139648438,
+      "token_count": 226,
+      "run_at": "2026-01-23T13:26:01.293798"
+    },
+    "1937b7a8|granite-4.0-h-small|547ed9": {
+      "result_key": "1937b7a8|granite-4.0-h-small|547ed9",
+      "test_item_id": "1937b7a8",
+      "model_id": "granite-4.0-h-small",
+      "model_display_name": "Granite 4.0 Small (default)",
+      "params": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "547ed9",
+      "system_prompt_name": "Explain Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=3768",
+      "context_length": 735,
+      "output": "The Sustainability Plan for Selkirk College outlines a comprehensive approach to addressing environmental challenges through various interconnected strategies:\n\n1. **Future-Focused Approach**: The college aims to tackle sustainability issues by looking ahead and planning proactively rather than reactively.\n\n2. **Action-Oriented Strategy**: Instead of merely discussing sustainability, the plan emphasizes taking concrete actions to make meaningful changes.\n\n3. **Collaborative Efforts**: Recognizing that sustainability is a collective effort, Selkirk College encourages collaboration among students, staff, and the broader community to achieve common goals.\n\n4. **Integration into Education**: Sustainability principles will be woven into student learning experiences, ensuring graduates are well-versed in environmental stewardship and prepared to contribute positively to society.\n\n5. **Sustainability Across Services and Operations**: The college commits to embedding sustainable practices within its day-to-day services and operational processes, minimizing environmental impact wherever possible.\n\n6. **Workforce Development**: By focusing on workforce development, Selkirk College aims to equip employees with the skills and knowledge necessary to implement and promote sustainability initiatives effectively.\n\n7. **Campus Culture Transformation**: The plan seeks to foster a campus culture that values and prioritizes sustainability, encouraging all members of the college community to adopt environmentally responsible behaviors.\n\n8. **Climate Action Measures**: To address climate change specifically, Selkirk College will develop strategies for both adapting to projected climate impacts (resilience-building) and reducing greenhouse gas emissions (mitigation).\n\n9. **Supporting Informed Citizens**: The college aims to empower students and employees with the knowledge, skills, values, and attitudes needed to drive necessary global transformations towards sustainability.\n\nBy adopting this multifaceted approach, Selkirk College demonstrates its commitment to playing a leading role in addressing environmental challenges while preparing future generations for active participation in creating a more sustainable world.",
+      "output_length": 2234,
+      "ttft": 3.9305245876312256,
+      "total_time": 6.619302272796631,
+      "token_count": 367,
+      "run_at": "2026-01-23T13:26:07.916771"
+    },
+    "d1e44320|qwen3-8b|e67e12": {
+      "result_key": "d1e44320|qwen3-8b|e67e12",
+      "test_item_id": "d1e44320",
+      "model_id": "qwen3-8b",
+      "model_display_name": "Qwen 3 8B (default)",
+      "params": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "e67e12",
+      "system_prompt_name": "Summarise Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=2701",
+      "context_length": 258,
+      "output": "<think>\nOkay, the user wants me to summarize the provided text about the Indigenization Plan. Let me read through the original input again.\n\nThe main points are that the plan is called \"Our Journey Together: Land, Life, Learning: Indigenization Plan 2019–2024.\" It supports truth, reconciliation, Indigenization, and decolonization at Selkirk College. The purpose is to create a framework for a stronger future for all learners and staff.\n\nI need to condense this into key points. First, mention the plan's name and timeframe. Then list the goals: supporting truth, reconciliation, Indigenization, and decolonization. Finally, state the outcome: providing a framework for a better future for everyone involved.\n\nWait, should I include all four terms? The original mentions \"truth, reconciliation, Indigenization and decolonization\" as supported by the plan. So yes, those are key elements. Also, the college is Selkirk College, so that's important to note. \n\nMake sure it's plain text without any markdown. Avoid greetings or platitudes. Keep it concise. Let me check if I simplified complex info. The terms like decolonization might be complex, but since the user wants simplicity for learners, maybe just present them as they are. \n\nPutting it all together: \"Selkirk College's Indigenization Plan 2019–2024 supports truth, reconciliation, Indigenization, and decolonization to create a framework for a stronger future for all learners and staff.\" That covers the main points without extra fluff.\n</think>\n\nSelkirk College's Indigenization Plan 2019–2024 supports truth, reconciliation, Indigenization, and decolonization to create a framework for a stronger future for all learners and staff.",
+      "output_length": 1694,
+      "ttft": 2.3075413703918457,
+      "total_time": 3.716747760772705,
+      "token_count": 381,
+      "run_at": "2026-01-23T13:26:13.653717"
+    },
+    "d1e44320|qwen3-14b|e67e12": {
+      "result_key": "d1e44320|qwen3-14b|e67e12",
+      "test_item_id": "d1e44320",
+      "model_id": "qwen3-14b",
+      "model_display_name": "Qwen 3 14B (default)",
+      "params": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "e67e12",
+      "system_prompt_name": "Summarise Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=2701",
+      "context_length": 258,
+      "output": "<think>\nOkay, let's tackle this query. The user wants a summary of the provided text about Selkirk College's Indigenization Plan 2019-2024.\n\nFirst, I need to read the original text carefully. The main points are that the plan supports truth, reconciliation, Indigenization, and decolonization at Selkirk College. It provides a framework for a stronger future for learners and staff by focusing on land, life, and learning.\n\nNow, I should condense this into key points. The user mentioned making it concise and simplifying complex terms. \"Indigenization\" might be a term that needs clarification, but since the original text doesn't explain it, maybe just keep it as is. The summary should avoid jargon but still capture the essence.\n\nCheck if there are any specific instructions from the user. They want plain text only, no markdown or greetings. Also, clarity and conciseness are important. So, I'll start with the main goal of the plan: supporting truth, reconciliation, etc., and mention the framework for a stronger future. Maybe combine \"land, life, learning\" into one phrase as they seem to be key elements.\n\nWait, the original title is \"Our Journey Together: Land, Life, Learning: Indigenization Plan 2019–2024\". The summary should include that it's a plan from 2019-2024. Also, ensure that the purpose (enabling stronger future for all learners and staff) is included.\n\nLet me draft: Selkirk College's Indigenization Plan 2019–2024 aims to support truth, reconciliation, and decolonization by creating a framework focused on land, life, and learning. It seeks to build a stronger future for students and staff. \n\nThat seems concise. Check if it's under the guidelines: no markdown, plain text, clear and accessible. Yes. Maybe \"learners\" instead of \"students\" since the original uses \"learners\". Adjust that: \"for all learners and staff\".\n\nFinal check: Does this capture the main points? Yes. Is it simplified enough for a learner? I think so. Okay, that should work.\n</think>\n\nSelkirk College's Indigenization Plan 2019–2024 promotes truth, reconciliation, and decolonization by creating a framework focused on land, life, and learning. It aims to build a stronger future for all learners and staff through meaningful inclusion of Indigenous perspectives and practices in education and college operations.",
+      "output_length": 2314,
+      "ttft": 2.309756278991699,
+      "total_time": 6.452791929244995,
+      "token_count": 529,
+      "run_at": "2026-01-23T13:26:20.110133"
+    },
+    "d1e44320|qwen/qwen3-32b|e67e12": {
+      "result_key": "d1e44320|qwen/qwen3-32b|e67e12",
+      "test_item_id": "d1e44320",
+      "model_id": "qwen/qwen3-32b",
+      "model_display_name": "Qwen 3 32B (default)",
+      "params": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "e67e12",
+      "system_prompt_name": "Summarise Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=2701",
+      "context_length": 258,
+      "output": "<think>\nOkay, let me start by understanding what the user needs here. They want a summary of the provided text about Selkirk College's Indigenization Plan 2019–2024. The key points from the original text are the plan's title, its purpose to support truth, reconciliation, Indigenization, and decolonization, and the framework it provides for learners and staff.\n\nI need to condense this into a concise summary without any markdown. Let me check the guidelines again: plain text only, no greetings or platitudes. The user emphasized clarity and conciseness. So I should mention the plan's name, its timeframe (2019–2024), and the main objectives. Also, highlight that it's a framework for all learners and staff.\n\nWait, \"Our Journey Together: Land, Life, Learning\" is part of the title. Should I include the subtitle? Maybe just mention the plan's name as given in the original text. The user probably wants the key terms like truth, reconciliation, Indigenization, decolonization to be included since they are central.\n\nLet me structure it: Start with the plan and its timeframe, then state its purpose (supporting truth, etc.), and note that it provides a framework for learners and staff. Make sure it's short and clear. Avoid any jargon or complex sentences. Check for simplicity and accessibility as per the instructions.\n</think>\n\nSelkirk College's Indigenization Plan 2019–2024 aims to advance truth, reconciliation, and decolonization by creating a framework that supports Indigenous ways of knowing and learning. It focuses on building stronger futures for all students and staff through inclusive education and community collaboration.",
+      "output_length": 1644,
+      "ttft": 5.191277265548706,
+      "total_time": 16.218443870544434,
+      "token_count": 356,
+      "run_at": "2026-01-23T13:26:38.370324"
+    },
+    "d1e44320|granite-4.0-h-tiny|547ed9": {
+      "result_key": "d1e44320|granite-4.0-h-tiny|547ed9",
+      "test_item_id": "d1e44320",
+      "model_id": "granite-4.0-h-tiny",
+      "model_display_name": "Granite 4.0 Tiny (default)",
+      "params": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "547ed9",
+      "system_prompt_name": "Summarise Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=2701",
+      "context_length": 258,
+      "output": "Selkirk College's Indigenization Plan 2019-2024 supports truth, reconciliation, and Indigenization through a framework aimed at enhancing the future for all learners and staff. This plan is part of a journey towards understanding and respecting Indigenous cultures and histories.",
+      "output_length": 279,
+      "ttft": 2.3247714042663574,
+      "total_time": 2.3255536556243896,
+      "token_count": 54,
+      "run_at": "2026-01-23T13:26:42.721266"
+    },
+    "d1e44320|granite-4.0-h-small|547ed9": {
+      "result_key": "d1e44320|granite-4.0-h-small|547ed9",
+      "test_item_id": "d1e44320",
+      "model_id": "granite-4.0-h-small",
+      "model_display_name": "Granite 4.0 Small (default)",
+      "params": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "547ed9",
+      "system_prompt_name": "Summarise Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=2701",
+      "context_length": 258,
+      "output": "Selkirk College's \"Our Journey Together\" plan (2019-2024) aims to support truth, reconciliation, indigenization, and decolonization through a framework that strengthens the future for all learners and staff by focusing on land, life, and learning.",
+      "output_length": 247,
+      "ttft": 3.9057211875915527,
+      "total_time": 4.265657901763916,
+      "token_count": 55,
+      "run_at": "2026-01-23T13:26:46.990843"
+    },
+    "5e153ef0|qwen3-8b|e67e12": {
+      "result_key": "5e153ef0|qwen3-8b|e67e12",
+      "test_item_id": "5e153ef0",
+      "model_id": "qwen3-8b",
+      "model_display_name": "Qwen 3 8B (default)",
+      "params": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "e67e12",
+      "system_prompt_name": "Summarise Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=3768",
+      "context_length": 735,
+      "output": "<think>\nOkay, let's see what the user needs here. They provided a text about Selkirk College's Sustainability Plan and want a summary following specific guidelines.\n\nFirst, I need to condense the information. The original text talks about their approach being future-focused, action-oriented, and collaborative. They mention integrating sustainability into various areas like learning, services, operations, etc. Also, climate action includes both adaptation and mitigation strategies. Plus, they aim to prepare students and employees as informed citizens.\n\nThe user wants a plain text summary without markdown or greetings. I should focus on key points: the college's commitment to sustainability across different aspects of their operations, their dual approach to climate action (adaptation and emission reduction), and the goal of empowering individuals for global change.\n\nI need to simplify complex terms. For example, \"mitigation\" and \"adaptation\" are technical terms related to climate change. Maybe explain them in simple terms. Also, ensure clarity and conciseness. Let me check if I'm covering all main points without extra details. Avoid any fluff. Make sure it's easy to read and conveys the essence of the original text.\n</think>\n\nSelkirk College commits to a proactive, collaborative sustainability strategy addressing climate challenges through education, operations, and workforce development. The plan integrates sustainability into learning, services, and campus culture, focusing on both reducing greenhouse gas emissions (mitigation) and adapting to climate impacts. It aims to equip students and staff with knowledge and skills to drive global environmental change.",
+      "output_length": 1687,
+      "ttft": 2.3046889305114746,
+      "total_time": 3.2630155086517334,
+      "token_count": 307,
+      "run_at": "2026-01-23T13:26:50.258492"
+    },
+    "5e153ef0|qwen3-14b|e67e12": {
+      "result_key": "5e153ef0|qwen3-14b|e67e12",
+      "test_item_id": "5e153ef0",
+      "model_id": "qwen3-14b",
+      "model_display_name": "Qwen 3 14B (default)",
+      "params": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "e67e12",
+      "system_prompt_name": "Summarise Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=3768",
+      "context_length": 735,
+      "output": "<think>\nOkay, let me start by reading through the user's query carefully. They provided a text about Selkirk College's Sustainability Plan and want a summary following specific guidelines.\n\nFirst, I need to condense the information. The main points are the college's commitment to sustainability across learning, operations, workforce development, and campus culture. They mention both adaptation to climate impacts and mitigation strategies like reducing greenhouse gas emissions. Also, they aim to equip students and employees with knowledge for global transformations.\n\nI should simplify any complex terms. For example, \"future-focused, action-oriented, collaborative approach\" can be phrased more simply as \"focus on future actions and collaboration.\" Avoid jargon where possible without losing meaning.\n\nCheck the guidelines again: plain text only, no markdown, greetings, or platitudes. Keep it concise and clear. Make sure each key point is covered without unnecessary details. Let me structure the summary in a few short sentences highlighting the main areas of focus and their commitment to climate action and education.\n</think>\n\nSelkirk College aims to address sustainability challenges through integrated efforts in education, operations, workforce development, and campus culture. The plan focuses on reducing greenhouse gas emissions, adapting to climate impacts, and building resilience. It emphasizes equipping students and staff with knowledge and skills to drive global environmental change.",
+      "output_length": 1509,
+      "ttft": 2.5166006088256836,
+      "total_time": 4.697921276092529,
+      "token_count": 265,
+      "run_at": "2026-01-23T13:26:54.961091"
+    },
+    "5e153ef0|qwen/qwen3-32b|e67e12": {
+      "result_key": "5e153ef0|qwen/qwen3-32b|e67e12",
+      "test_item_id": "5e153ef0",
+      "model_id": "qwen/qwen3-32b",
+      "model_display_name": "Qwen 3 32B (default)",
+      "params": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "e67e12",
+      "system_prompt_name": "Summarise Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=3768",
+      "context_length": 735,
+      "output": "<think>\nOkay, let's see. The user wants me to summarize this text about Selkirk College's sustainability plan. First, I need to read through the original content carefully.\n\nThe main points are that the college is taking a future-focused approach with action and collaboration on sustainability issues. They're integrating sustainability into various areas like student learning, operations, workforce development, and campus culture. Their climate actions include adapting to climate impacts and reducing greenhouse gases (mitigation). Also, they aim to support students and employees in becoming informed citizens with the necessary knowledge and skills for global changes.\n\nI need to condense this. Let's start by identifying key elements: future-focused, action-oriented, collaborative approach. Then mention integration into different areas. Then climate actions—adaptation and mitigation. Finally, supporting students and staff through education and equipping them with knowledge/skills.\n\nMake sure it's concise. Avoid jargon where possible. Simplify any complex terms. Check the guidelines again: plain text only, no markdown, greetings, etc. Keep it clear and accessible. Let me put that all together in a few sentences.\n</think>\n\nSelkirk College prioritizes sustainability through future-focused actions, collaboration, and integration into education, operations, workforce training, and campus culture. It addresses climate challenges by adapting to impacts and reducing emissions while building resilience. The plan empowers students and staff with knowledge, skills, and values to drive global sustainability efforts.",
+      "output_length": 1629,
+      "ttft": 5.52396821975708,
+      "total_time": 14.644468069076538,
+      "token_count": 290,
+      "run_at": "2026-01-23T13:27:09.609732"
+    },
+    "5e153ef0|granite-4.0-h-tiny|547ed9": {
+      "result_key": "5e153ef0|granite-4.0-h-tiny|547ed9",
+      "test_item_id": "5e153ef0",
+      "model_id": "granite-4.0-h-tiny",
+      "model_display_name": "Granite 4.0 Tiny (default)",
+      "params": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "547ed9",
+      "system_prompt_name": "Summarise Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=3768",
+      "context_length": 735,
+      "output": "Selkirk College Sustainability Plan\n\nThe college adopts a future-focused, action-oriented, and collaborative approach to address interconnected sustainability challenges. It integrates sustainability into student learning, services, operations, workforce development, and campus culture. The plan includes measures for climate adaptation and greenhouse gas emission reduction while building resilience. Selkirk College aims to equip students and employees with knowledge, skills, values, and attitudes necessary for global transformations.",
+      "output_length": 539,
+      "ttft": 2.3240747451782227,
+      "total_time": 2.325234889984131,
+      "token_count": 84,
+      "run_at": "2026-01-23T13:27:13.978337"
+    },
+    "5e153ef0|granite-4.0-h-small|547ed9": {
+      "result_key": "5e153ef0|granite-4.0-h-small|547ed9",
+      "test_item_id": "5e153ef0",
+      "model_id": "granite-4.0-h-small",
+      "model_display_name": "Granite 4.0 Small (default)",
+      "params": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "547ed9",
+      "system_prompt_name": "Summarise Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=3768",
+      "context_length": 735,
+      "output": "Selkirk College's Sustainability Plan focuses on integrating sustainability into all aspects of college life:\n\n1. Student Learning: Incorporating sustainability concepts into curricula to equip students with knowledge, skills, values, and attitudes needed for global transformation.\n\n2. Services and Operations: Implementing sustainable practices in campus services and operations to reduce environmental impact.\n\n3. Workforce Development: Preparing employees with the necessary competencies to contribute to a sustainable future.\n\n4. Campus Culture: Fostering a culture that prioritizes sustainability and encourages informed citizenship.\n\n5. Climate Action: Developing strategies to adapt to projected climate impacts and reduce greenhouse gas emissions through mitigation measures, building resilience in the face of environmental challenges.",
+      "output_length": 845,
+      "ttft": 3.873356580734253,
+      "total_time": 4.853529453277588,
+      "token_count": 138,
+      "run_at": "2026-01-23T13:27:18.836198"
+    },
+    "87eb2bf3|mistralai/mistral-7b-instruct-v0.3|dbfeab": {
+      "result_key": "87eb2bf3|mistralai/mistral-7b-instruct-v0.3|dbfeab",
+      "test_item_id": "87eb2bf3",
+      "model_id": "mistralai/mistral-7b-instruct-v0.3",
+      "model_display_name": "Mistral 7B Instruct v0.3 (default)",
+      "params": {
+        "temperature": 0.8,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "dbfeab",
+      "system_prompt_name": "Explain Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=2701",
+      "context_length": 258,
+      "output": " The \"Our Journey Together: Land, Life, Learning - Indigenization Plan 2019–2024\" is a strategic blueprint designed by Selkirk College to promote truth, reconciliation, indigenization, and decolonization within its community. This plan aims to foster a stronger educational environment for all learners and staff members.\n\nThe primary goal of this indigenization plan is to create a more inclusive and culturally sensitive atmosphere by addressing the historical imbalances and systemic issues that have disproportionately affected Indigenous peoples in educational settings. By doing so, Selkirk College seeks to foster an environment where Indigenous perspectives, knowledge, and experiences are valued and integrated into all aspects of its operations.\n\nThe plan outlines several key components, including the development of partnerships with local First Nations communities, incorporating Indigenous content into curriculum, providing culturally relevant supports for Indigenous students, and creating opportunities for staff to learn about Indigenous cultures and histories. The ultimate goal is to help everyone within the Selkirk College community understand and appreciate Indigenous ways of knowing and being.\n\nIn essence, this indigenization plan serves as a roadmap for Selkirk College to actively work towards creating a more inclusive, equitable, and respectful educational environment that honors and celebrates Indigenous cultures while promoting truth, reconciliation, and decolonization. By doing so, it hopes to empower all learners and staff members to contribute to a stronger future for everyone involved.",
+      "output_length": 1626,
+      "ttft": 2.9365901947021484,
+      "total_time": 4.287355184555054,
+      "token_count": 323,
+      "run_at": "2026-01-26T09:47:35.806849"
+    },
+    "87eb2bf3|magistral-small-2509|547ed9": {
+      "result_key": "87eb2bf3|magistral-small-2509|547ed9",
+      "test_item_id": "87eb2bf3",
+      "model_id": "magistral-small-2509",
+      "model_display_name": "Magistral temperature 0",
+      "params": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      },
+      "params_hash": "547ed9",
+      "system_prompt_name": "Explain Text (Moodle)",
+      "context_name": "https://teach.selkirk.ca/mod/book/view.php?id=2701",
+      "context_length": 258,
+      "output": "Indigenization refers to the process of incorporating Indigenous knowledge, perspectives, and ways of knowing into institutions like schools or workplaces. The plan titled \"Our Journey Together: Land, Life, Learning\" from 2019-2024 at Selkirk College is designed to support truth and reconciliation efforts, as well as Indigenization and decolonization. Truth and reconciliation involves acknowledging past wrongs done to Indigenous peoples and working towards healing those relationships. Decolonization means challenging and changing systems that were built on colonial ideas, which often excluded or harmed Indigenous cultures.\n\nThis plan serves as a framework to help the college create a more inclusive environment where all learners and staff can thrive. It aims to strengthen the future for everyone by ensuring that Indigenous voices are respected and valued. For example, this might involve incorporating Indigenous teachings into the curriculum, creating spaces for Indigenous students to connect with their culture, or hiring more Indigenous staff members. The goal is not just to include Indigenous perspectives but also to challenge and change systems that have historically marginalized them.",
+      "output_length": 1206,
+      "ttft": 2.8637025356292725,
+      "total_time": 5.183063983917236,
+      "token_count": 215,
+      "run_at": "2026-01-26T09:48:04.687102"
+    }
+  }
+}

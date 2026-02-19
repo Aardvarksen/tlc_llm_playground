@@ -60,47 +60,53 @@ Not just "it works" but "I could rebuild this from scratch and explain every lin
 - Real-time streaming responses
 - Clean, maintainable codebase
 
-## Current Architecture
+## Current Architecture (as of 2026-01-21)
 
-### Components
-1. **Streamlit Frontend** (`streamlit_v2.0.py`)
-   - Chat interface with model selection
-   - System prompt and parameter customization
-   - Context injection capability
-   - **UPDATED**: Now connects to queue server (not directly to LM Studio)
-   - Shows queue position and status feedback
+### Multi-Page Streamlit Application
+**Entry Point**: `app.py` - runs with `streamlit run app.py`
 
-2. **FastAPI Queue Server** (`queue_server.py`)
-   - Request queue management with `asyncio.Queue`
-   - Background worker for sequential LLM request processing
-   - Status tracking via `/request/{request_id}` endpoint
-   - **COMPLETE**: Streaming endpoint `/stream/{request_id}` using SSE
-   - Sits between frontend and LM Studio
+**Pages** (in `pages/` directory):
+1. **Side-by-Side** (`side_by_side.py`) - Compare up to 3 models on the same prompt/content
+2. **Saved Contexts** (`saved_contexts.py`) - CRUD for reusable content snippets (Moodle page content)
+3. **Saved Prompts** (`saved_prompts.py`) - CRUD for system prompts (includes Moodle defaults)
+4. **Batch Runner** (`batch_runner.py`) - Automated testing: models × prompts × contexts with CSV export
+5. **Model Configuration** (`model_config.py`) - Enable/disable models, adjust parameters
+6. **How-To Guides** (`how_to.py`) - Documentation for TLC users
+
+**Utilities** (in `utilities/` directory):
+- `model_config.py` - Model CRUD, approved models list
+- `context_config.py` - Context CRUD
+- `system_prompt_config.py` - System prompt CRUD (with Moodle defaults)
+- `benchmark_results.py` - Batch results storage, caching, CSV export
+
+**JSON Config Files** (auto-created on first run):
+- `model_config.json` - Enabled models and their parameters
+- `context_config.json` - Saved content snippets
+- `system_prompt_config.json` - Saved system prompts
+- `benchmark_results.json` - Batch run results (test items + outputs)
+
+### FastAPI Queue Server
+**Current**: `queue_server_v2.py` - runs on port 8001
+- Request queue management with `asyncio.Queue`
+- Background worker for sequential LLM processing
+- Streaming via SSE at `/stream/{request_id}`
+- Sits between Streamlit frontend and LM Studio
 
 ### Technology Stack
-- **Frontend**: Streamlit
+- **Frontend**: Streamlit (multi-page app)
 - **Backend**: FastAPI with async/await
 - **Queue**: asyncio.Queue (in-memory)
 - **Streaming**: Server-Sent Events (SSE)
 - **LLM Interface**: OpenAI-compatible client (for LM Studio)
+- **Storage**: JSON files (designed for future SQLite migration)
 - **Python Version**: 3.x (venv present)
 
-### Current Understanding Status (as of 2025-10-30)
-**Strong areas** ✅:
-- Basic request flow and architecture
-- Why queue server exists (LM Studio model loading issue)
-- Request lifecycle and data structures
-- Frontend integration (Streamlit session state, API calls)
-- User experience considerations (why streaming matters)
-
-**Needs deeper understanding** 🟡:
-- **Async fundamentals**: Why async vs threading, when to use each
-- **The event loop**: What it is, how it schedules tasks, where it lives
-- **SSE mechanics**: How Server-Sent Events work vs regular HTTP
-- **Streaming data flow**: Complete token journey from LLM → browser with format conversions
-- **Async generators**: How `yield` enables streaming in async functions
-
-**Priority for next "refactor for understanding" session**: Focus on async/SSE/streaming concepts through code walkthrough.
+### Cleanup Needed (Future Session)
+The repo has accumulated files from earlier iterations. Need to:
+- **Spin off queue_server_v2.py** as its own thing (possibly separate repo or clear separation)
+- **Archive/delete legacy files**: `queue_server.py`, `streamlit_v2.0.py`, `original_streamlit.py`, etc.
+- **Consolidate**: Keep only files that touch the current `app.py` setup
+- **Document**: Which files are "the app" vs "experiments" vs "reference"
 
 ## Code Style & Conventions
 
@@ -110,9 +116,11 @@ Not just "it works" but "I could rebuild this from scratch and explain every lin
 - **Explicit over implicit**: Be explicit about what the code does
 
 ### Current Patterns
-- Session state management using Streamlit's `st.session_state`
-- Model-specific configurations stored in `MODEL_DEFAULTS` dictionary
-- OpenAI client cached using `@st.cache_resource`
+- Session state management using Streamlit's `st.session_state` with `app.` prefix for shared state
+- Configuration stored in JSON files, loaded into session state on app start
+- Utility modules follow CRUD pattern: `load_config()`, `save_config()`, `get_all_*()`, `add_*()`, `update_*()`, `delete_*()`
+- Widget keys use page prefix convention: `batch_runner.model_0`, `contexts.editing`, etc.
+- httpx for HTTP client (sync for queue submissions, streaming for SSE)
 
 ### Variable Naming
 - `SCREAMING_SNAKE_CASE` for constants
@@ -156,31 +164,38 @@ Current pattern for building context:
 
 ## Known Limitations & TODOs
 
-### Current System Status
+### Current System Status (as of 2026-01-21)
 ✅ **Complete**:
-- Queue server with async worker
-- Streamlit frontend connected to queue server
-- Streaming responses via SSE
-- Basic queue position feedback
-- Configuration management (config.py + .env)
-- Dependency management (requirements.txt)
+- Multi-page Streamlit app with navigation
+- Queue server with async worker + SSE streaming
+- Side-by-side model comparison (up to 3 models)
+- Saved contexts management (CRUD)
+- Saved system prompts management (CRUD with Moodle defaults)
+- Model configuration (enable/disable, parameters)
+- Batch runner with matrix testing (models × prompts × contexts)
+- Results caching (skip already-run combinations)
+- CSV export for batch results
+- How-to guides for TLC users
+
+🟡 **Awaiting TLC Feedback**:
+- Real-world usage testing
+- UI/UX refinements based on user experience
+- Additional system prompts or contexts needed
 
 ### Active Limitations
 1. **In-memory queue**: Lost on server restart, no persistence
 2. **Single worker**: Only one LLM request processed at a time (by design)
 3. **No authentication**: Open access (planned: AD integration)
-4. **No message persistence**: Conversations not saved between sessions
+4. **JSON storage**: Works but not ideal for concurrent access or scale
+5. **No conversation history**: Side-by-side is stateless (by design for now)
 
 ### Future Considerations / Potential Extensions
 - **AD user authentication** (connecting to existing auth system)
-- **Message storage** (allow users to save past generations)
+- **SQLite migration** (benchmark_results.py designed for this)
 - **Evaluation framework** (for TLC pedagogical research - "evals")
-- **Multi-user sessions** (separate conversation histories)
 - **Request rate limiting** (per-user quotas)
-- **Response caching** (duplicate request detection)
-- **Model performance metrics** (token/sec, latency tracking)
-- **Conversation export/import** (for analysis)
-- **Database for persistent storage** (PostgreSQL, SQLite, etc.)
+- **Model performance dashboards** (aggregate metrics over time)
+- **Prompt templates with variables** (e.g., "Summarize for {audience}")
 
 ## Working with Darrin
 
@@ -327,21 +342,44 @@ Questions should:
 I'll answer them without looking at the code, then we'll review together.
 ```
 
-## Project Structure (Proposed)
+## Project Structure (Actual - as of 2026-01-21)
 ```
 tlc_llm_playground/
-├── CLAUDE.md              # This file
-├── plan.md                # MVP roadmap and component breakdown
-├── original_streamlit.py  # Current Streamlit frontend
-├── queue_server.py        # FastAPI queue server (WIP)
-├── venv/                  # Virtual environment
-├── requirements.txt       # (TO CREATE) Python dependencies
-├── config.py              # (PROPOSED) Centralized configuration
-├── src/                   # (PROPOSED) Organized source code
-│   ├── frontend/         # Streamlit app components
-│   ├── backend/          # FastAPI server components
-│   └── utils/            # Shared utilities
-└── tests/                # (PROPOSED) Unit and integration tests
+├── CLAUDE.md                    # This file - project context for AI assistants
+├── plan.md                      # MVP roadmap and planning docs
+├── app.py                       # MAIN ENTRY POINT - run with: streamlit run app.py
+├── queue_server_v2.py           # FastAPI queue server - run with: python queue_server_v2.py
+│
+├── pages/                       # Streamlit multi-page app pages
+│   ├── side_by_side.py         # Model comparison (up to 3 models)
+│   ├── saved_contexts.py       # Manage saved content snippets
+│   ├── saved_prompts.py        # Manage system prompts
+│   ├── batch_runner.py         # Automated batch testing
+│   ├── model_config.py         # Model enable/disable + parameters
+│   └── how_to.py               # User documentation
+│
+├── utilities/                   # Shared utility modules
+│   ├── model_config.py         # Model CRUD operations
+│   ├── context_config.py       # Context CRUD operations
+│   ├── system_prompt_config.py # System prompt CRUD operations
+│   └── benchmark_results.py    # Batch results storage + CSV export
+│
+├── *.json                       # Auto-generated config files
+│   ├── model_config.json
+│   ├── context_config.json
+│   ├── system_prompt_config.json
+│   └── benchmark_results.json
+│
+├── how-to-guides/              # Markdown guides for TLC users
+├── reference/                  # Reference materials (Moodle source, etc.)
+├── moodle-5.1.1/              # Moodle source for reference
+├── venv/                      # Virtual environment
+├── requirements.txt           # Python dependencies
+│
+└── [LEGACY - needs cleanup]
+    ├── queue_server.py        # Old queue server version
+    ├── streamlit_v2.0.py      # Old standalone frontend
+    └── original_streamlit.py  # Original prototype
 ```
 
 ## References
@@ -351,5 +389,5 @@ tlc_llm_playground/
 - OpenAI API Spec: https://platform.openai.com/docs/api-reference
 
 ---
-*Last Updated: 2025-10-30*
+*Last Updated: 2026-01-21*
 *Maintained by: Claude (AI Assistant) in collaboration with Darrin*

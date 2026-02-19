@@ -2,7 +2,23 @@
   "permissions": {
     "allow": [
       "Bash(pip show:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "WebSearch",
+      "WebFetch(domain:lmstudio.ai)",
+      "Bash(start:*)",
+      "Bash(timeout /t 3 /nobreak)",
+      "Bash(curl:*)",
+      "WebFetch(domain:docs.moodle.org)",
+      "WebFetch(domain:moodledev.io)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:www.clamp-it.org)",
+      "WebFetch(domain:tracker.moodle.org)",
+      "WebFetch(domain:moodle.org)",
+      "WebFetch(domain:justin.searls.co)",
+      "WebFetch(domain:docs.litellm.ai)",
+      "WebFetch(domain:docs.ollama.com)"
     ],
     "deny": [],
     "ask": []

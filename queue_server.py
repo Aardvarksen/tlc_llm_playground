@@ -51,18 +51,30 @@ class QueueRequest(BaseModel):
     the full messages array (including system prompt, context, history).
 
     The queue server is a "dumb pass-through" - it just queues and forwards.
+
+    Parameters match LM Studio's OpenAI-compatible API:
+    https://lmstudio.ai/docs/developer/openai-compat/chat-completions
     """
     client_id: str  # Which app sent this? "streamlit_demo_1", "jupyter_lab", etc.
     messages: list[dict]  # OpenAI format: [{"role": "system", "content": "..."}, ...]
     model: str  # Which LLM model to use
 
-    # LLM generation parameters (matching OpenAI API)
+    # LLM generation parameters (matching OpenAI/LM Studio API)
     temperature: float = 0.7
     max_tokens: Optional[int] = None
     top_p: float = 1.0
+    top_k: Optional[int] = None  # LM Studio: limits to K most likely tokens
     frequency_penalty: float = 0.0
     presence_penalty: float = 0.0
-    stream: bool = True  # We always stream responses
+    repeat_penalty: Optional[float] = None  # LM Studio: penalizes repeated tokens
+    stop: Optional[list[str]] = None  # Stop sequences
+    logit_bias: Optional[dict[str, float]] = None  # Bias specific tokens
+    seed: Optional[int] = None  # Random seed for reproducibility
+    stream: bool = True  # We default to streaming responses
+
+    # Tool/Function calling (for agentic apps)
+    tools: Optional[list[dict]] = None  # Array of tool/function definitions
+    tool_choice: Optional[str] = None  # "auto", "none", or "required"
 
     # Optional: for future per-user auth within a client app
     user: Optional[str] = None
@@ -155,7 +167,7 @@ async def queue_worker():
     - asyncio.sleep() allows other tasks to run (doesn't block event loop)
     - try/except ensures one failed request doesn't crash the worker
     """
-    print("🔧 Queue worker started - waiting for requests...")
+    print("[WORKER] Queue worker started - waiting for requests...")
 
     while worker_running:
         try:
@@ -174,7 +186,7 @@ async def queue_worker():
             client_id = queue_item["client_id"]
             request_data = queue_item["request_data"]
 
-            print(f"📝 Processing request {request_id} from {client_id}")
+            print(f"[WORKER] Processing request {request_id} from {client_id}")
 
             # Update status to "processing"
             status_tracker[request_id].status = "processing"
@@ -192,28 +204,37 @@ async def queue_worker():
                 stream_chunks[request_id] = asyncio.Queue()
 
                 # Extract parameters from request
+                # Required parameters
                 messages = request_data.get("messages", [])
                 model = request_data.get("model")
-                temperature = request_data.get("temperature", 0.7)
-                max_tokens = request_data.get("max_tokens")
-                top_p = request_data.get("top_p", 1.0)
-                frequency_penalty = request_data.get("frequency_penalty", 0.0)
-                presence_penalty = request_data.get("presence_penalty", 0.0)
 
-                print(f"🤖 Calling LM Studio with model: {model}")
+                print(f"[LLM] Calling LM Studio with model: {model}")
+
+                # Build kwargs dict - only include non-None optional parameters
+                # This avoids sending null values to LM Studio
+                llm_kwargs = {
+                    "model": model,
+                    "messages": messages,
+                    "stream": True,  # CRITICAL: enables streaming
+                    "temperature": request_data.get("temperature", 0.7),
+                    "top_p": request_data.get("top_p", 1.0),
+                    "frequency_penalty": request_data.get("frequency_penalty", 0.0),
+                    "presence_penalty": request_data.get("presence_penalty", 0.0),
+                }
+
+                # Add optional parameters only if they're provided (not None)
+                optional_params = [
+                    "max_tokens", "top_k", "repeat_penalty", "stop",
+                    "logit_bias", "seed", "tools", "tool_choice"
+                ]
+                for param in optional_params:
+                    value = request_data.get(param)
+                    if value is not None:
+                        llm_kwargs[param] = value
 
                 # Call LM Studio with streaming
                 # This returns an async generator that yields chunks as they arrive
-                stream = await llm_client.chat.completions.create(
-                    model=model,
-                    messages=messages,
-                    temperature=temperature,
-                    max_tokens=max_tokens,
-                    top_p=top_p,
-                    frequency_penalty=frequency_penalty,
-                    presence_penalty=presence_penalty,
-                    stream=True  # CRITICAL: enables streaming
-                )
+                stream = await llm_client.chat.completions.create(**llm_kwargs)
 
                 # Collect the full response for storage
                 full_response = ""
@@ -242,11 +263,11 @@ async def queue_worker():
                 queue_stats["total_processed"] += 1
                 queue_stats["current_request_id"] = None
 
-                print(f"✓ Request {request_id} completed successfully ({len(full_response)} chars)")
+                print(f"[OK] Request {request_id} completed successfully ({len(full_response)} chars)")
 
             except Exception as processing_error:
                 # If processing fails, mark as error
-                print(f"✗ Error processing request {request_id}: {processing_error}")
+                print(f"[ERROR] Error processing request {request_id}: {processing_error}")
 
                 # If we created a stream queue, send error signal and clean up
                 if request_id in stream_chunks:
@@ -265,10 +286,10 @@ async def queue_worker():
         except Exception as e:
             # Catch-all for any unexpected errors in the worker loop
             # This prevents the worker from crashing
-            print(f"✗ Worker error: {e}")
+            print(f"[ERROR] Worker error: {e}")
             await asyncio.sleep(1)  # Brief pause before retrying
 
-    print("🛑 Queue worker stopped")
+    print("[WORKER] Queue worker stopped")
 
 
 # ============================================================================
@@ -282,13 +303,13 @@ async def startup_event():
     Runs when the FastAPI server starts up.
     We use this to launch the background worker task.
     """
-    print("🚀 Server starting up...")
+    print("[SERVER] Starting up...")
 
     # Create the worker task and let it run in the background
     # asyncio.create_task() schedules it to run but doesn't wait for it
     asyncio.create_task(queue_worker())
 
-    print("✓ Background worker launched")
+    print("[SERVER] Background worker launched")
 
 
 @app.on_event("shutdown")
@@ -299,8 +320,8 @@ async def shutdown_event():
     """
     global worker_running
 
-    print("🛑 Server shutting down...")
-    print("⏳ Stopping background worker...")
+    print("[SERVER] Shutting down...")
+    print("[SERVER] Stopping background worker...")
 
     # Signal the worker to stop
     worker_running = False
@@ -308,7 +329,7 @@ async def shutdown_event():
     # Give it a moment to finish current request
     await asyncio.sleep(2)
 
-    print("✓ Shutdown complete")
+    print("[SERVER] Shutdown complete")
 
 
 # ============================================================================
@@ -515,6 +536,269 @@ async def stream_response(request_id: str):
             "Connection": "keep-alive",
         }
     )
+
+
+# ============================================================================
+# OpenAI-Compatible Endpoint
+# ============================================================================
+# This endpoint provides drop-in compatibility with OpenAI's API.
+# Apps can just change their base_url and get queue management for free.
+
+class OpenAIChatRequest(BaseModel):
+    """
+    Standard OpenAI chat completion request format.
+    No client_id - this is for apps that don't know about our queue system.
+
+    Reference: https://platform.openai.com/docs/api-reference/chat/create
+    LM Studio compatibility: https://lmstudio.ai/docs/developer/openai-compat/chat-completions
+    """
+    model: str
+    messages: list[dict]
+
+    # Generation parameters
+    temperature: Optional[float] = 0.7
+    max_tokens: Optional[int] = None
+    top_p: Optional[float] = 1.0
+    top_k: Optional[int] = None
+    frequency_penalty: Optional[float] = 0.0
+    presence_penalty: Optional[float] = 0.0
+    repeat_penalty: Optional[float] = None
+    stop: Optional[list[str]] = None
+    logit_bias: Optional[dict[str, float]] = None
+    seed: Optional[int] = None
+    stream: Optional[bool] = False  # Default to non-streaming for compatibility
+
+    # Tool/Function calling
+    tools: Optional[list[dict]] = None
+    tool_choice: Optional[str] = None
+
+    # OpenAI fields we accept but may not use
+    user: Optional[str] = None
+
+
+@app.post("/v1/chat/completions")
+async def openai_chat_completions(request: OpenAIChatRequest):
+    """
+    OpenAI-compatible chat completions endpoint.
+
+    Drop-in replacement for OpenAI's /v1/chat/completions.
+    Apps can switch their base_url from api.openai.com (or localhost:1234 for LM Studio)
+    to this server and get queue management automatically.
+
+    Supports both streaming and non-streaming responses.
+    """
+    import json
+    import time
+
+    # Generate request_id and create internal queue request
+    request_id = str(uuid.uuid4())
+
+    # Create status tracking entry
+    status_tracker[request_id] = RequestStatus(
+        status="queued",
+        client_id="openai_compat",  # Mark as coming from compatibility endpoint
+        created_at=datetime.now().isoformat(),
+    )
+
+    # Package for queue (reuse existing queue infrastructure)
+    queue_item = {
+        "request_id": request_id,
+        "client_id": "openai_compat",
+        "request_data": request.dict(),
+    }
+
+    await request_queue.put(queue_item)
+    queue_stats["total_received"] += 1
+
+    print(f"[QUEUE] OpenAI-compat request {request_id} queued (stream={request.stream})")
+
+    if request.stream:
+        # Streaming response - return SSE in OpenAI format
+        async def openai_stream_generator():
+            """
+            Generates SSE events in OpenAI's streaming format.
+
+            OpenAI format:
+                data: {"id":"chatcmpl-...","object":"chat.completion.chunk","created":123,"model":"...","choices":[{"index":0,"delta":{"content":"Hello"},"finish_reason":null}]}
+
+            Final message:
+                data: {"id":"chatcmpl-...","object":"chat.completion.chunk","created":123,"model":"...","choices":[{"index":0,"delta":{},"finish_reason":"stop"}]}
+                data: [DONE]
+            """
+            created_timestamp = int(time.time())
+
+            # Wait for request to start processing
+            while status_tracker[request_id].status == "queued":
+                await asyncio.sleep(0.1)
+
+            # Check for errors
+            if status_tracker[request_id].status == "error":
+                error_msg = status_tracker[request_id].error or "Unknown error"
+                error_chunk = {
+                    "error": {
+                        "message": error_msg,
+                        "type": "server_error",
+                    }
+                }
+                yield f"data: {json.dumps(error_chunk)}\n\n"
+                return
+
+            # Wait for stream queue to be created
+            while request_id not in stream_chunks:
+                await asyncio.sleep(0.05)
+
+            chunk_queue = stream_chunks[request_id]
+
+            while True:
+                chunk = await chunk_queue.get()
+
+                if chunk is None:
+                    # Stream done - send finish message and [DONE]
+                    finish_chunk = {
+                        "id": f"chatcmpl-{request_id}",
+                        "object": "chat.completion.chunk",
+                        "created": created_timestamp,
+                        "model": request.model,
+                        "choices": [{
+                            "index": 0,
+                            "delta": {},
+                            "finish_reason": "stop"
+                        }]
+                    }
+                    yield f"data: {json.dumps(finish_chunk)}\n\n"
+                    yield "data: [DONE]\n\n"
+                    break
+
+                elif isinstance(chunk, dict) and "error" in chunk:
+                    error_chunk = {
+                        "error": {
+                            "message": chunk["error"],
+                            "type": "server_error",
+                        }
+                    }
+                    yield f"data: {json.dumps(error_chunk)}\n\n"
+                    break
+
+                else:
+                    # Regular content chunk - format as OpenAI
+                    content_chunk = {
+                        "id": f"chatcmpl-{request_id}",
+                        "object": "chat.completion.chunk",
+                        "created": created_timestamp,
+                        "model": request.model,
+                        "choices": [{
+                            "index": 0,
+                            "delta": {"content": chunk},
+                            "finish_reason": None
+                        }]
+                    }
+                    yield f"data: {json.dumps(content_chunk)}\n\n"
+
+            # Cleanup
+            if request_id in stream_chunks:
+                del stream_chunks[request_id]
+
+        return StreamingResponse(
+            openai_stream_generator(),
+            media_type="text/event-stream",
+            headers={
+                "Cache-Control": "no-cache",
+                "Connection": "keep-alive",
+            }
+        )
+
+    else:
+        # Non-streaming response - wait for completion and return full response
+        # Poll until complete (with timeout)
+        timeout_seconds = 300  # 5 minute timeout
+        start_time = asyncio.get_event_loop().time()
+
+        while status_tracker[request_id].status in ("queued", "processing"):
+            if asyncio.get_event_loop().time() - start_time > timeout_seconds:
+                return {"error": {"message": "Request timed out", "type": "timeout"}}
+            await asyncio.sleep(0.1)
+
+        # Check final status
+        status = status_tracker[request_id]
+
+        if status.status == "error":
+            return {
+                "error": {
+                    "message": status.error or "Unknown error",
+                    "type": "server_error"
+                }
+            }
+
+        # Success - return OpenAI-format response
+        return {
+            "id": f"chatcmpl-{request_id}",
+            "object": "chat.completion",
+            "created": int(datetime.fromisoformat(status.created_at).timestamp()),
+            "model": request.model,
+            "choices": [{
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": status.result
+                },
+                "finish_reason": "stop"
+            }],
+            "usage": {
+                "prompt_tokens": -1,  # We don't track this currently
+                "completion_tokens": -1,
+                "total_tokens": -1
+            }
+        }
+
+
+# ============================================================================
+# Model Discovery Endpoint
+# ============================================================================
+
+@app.get("/v1/models")
+async def list_models():
+    """
+    List available models from LM Studio.
+
+    Proxies to LM Studio's /v1/models endpoint so clients can discover
+    what models are available before making requests.
+
+    This is part of the OpenAI API spec that many clients call first.
+
+    Returns:
+        OpenAI-format model list, or error if LM Studio unreachable
+    """
+    try:
+        # Use the OpenAI client to list models from LM Studio
+        models = await llm_client.models.list()
+
+        # Convert to dict format (the client returns a pydantic-like object)
+        return {
+            "object": "list",
+            "data": [model.model_dump() for model in models.data]
+        }
+
+    except Exception as e:
+        # LM Studio not running, or network error
+        error_msg = str(e)
+
+        # Provide helpful context based on common errors
+        if "Connection refused" in error_msg or "Cannot connect" in error_msg:
+            return {
+                "error": {
+                    "message": f"Cannot reach LM Studio at {config.LM_STUDIO_BASE_URL}. Is it running?",
+                    "type": "connection_error",
+                    "details": error_msg
+                }
+            }
+
+        return {
+            "error": {
+                "message": "Failed to fetch models from LM Studio",
+                "type": "server_error",
+                "details": error_msg
+            }
+        }
 
 
 # ============================================================================
