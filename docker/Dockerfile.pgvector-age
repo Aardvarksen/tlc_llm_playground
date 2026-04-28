@@ -1,0 +1,59 @@
+# pgvector:pg16 + Apache AGE 1.5.0
+# Base: pgvector/pgvector:pg16 (PG16 + pgvector already installed)
+# Adds: Apache AGE 1.5.0 compiled from the official release tarball
+#
+# Why this direction (and not FROM apache/age): the apache/age image ships an
+# older PG/Debian base that fights with postgresql-server-dev-* sources. Going
+# the other way — pgvector base, compile AGE on top — is the path that worked.
+#
+# Build:
+#   # Download the AGE source tarball into docker/ first (avoids SSL/network
+#   # surprises during build):
+#   curl -L -o docker/age-PG16-v1.5.0-rc0.tar.gz \
+#     https://github.com/apache/age/archive/refs/tags/PG16/v1.5.0-rc0.tar.gz
+#
+#   docker build -f docker/Dockerfile.pgvector-age -t pgvector-age:pg16 docker/
+#
+# Run:
+#   docker run --name pgvector-age -d \
+#     -e POSTGRES_PASSWORD=postgres \
+#     -p 5432:5432 \
+#     -v pgdata:/var/lib/postgresql/data \
+#     pgvector-age:pg16
+#
+# First-time DB setup (per database that needs AGE):
+#   docker exec pgvector-age psql -U postgres -d YOUR_DB -c \
+#     "CREATE EXTENSION IF NOT EXISTS vector;
+#      CREATE EXTENSION IF NOT EXISTS age;"
+#
+# Per-connection (AGE requires this before any Cypher — not session-persistent
+# across connections, bake into your connection helper):
+#   LOAD 'age';
+#   SET search_path = ag_catalog, public;
+
+FROM pgvector/pgvector:pg16
+
+# Build dependencies: gcc/make, PG16 server headers, AGE's Cypher parser gens
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        build-essential \
+        postgresql-server-dev-16 \
+        flex \
+        bison
+
+# AGE 1.5.0 source. The git branch release/PG16/1.5.0 doesn't resolve cleanly,
+# so use the published release tarball. Despite the -rc0 suffix, this is the
+# tagged 1.5.0 release for PG16.
+COPY age-PG16-v1.5.0-rc0.tar.gz /tmp/
+RUN cd /tmp && \
+    tar xzf age-PG16-v1.5.0-rc0.tar.gz && \
+    cd age-PG16-v1.5.0-rc0 && \
+    make && \
+    make install
+
+# Trim the image: remove build tools and source
+RUN rm -rf /tmp/age-PG16* && \
+    apt-get purge -y build-essential postgresql-server-dev-16 flex bison && \
+    apt-get autoremove -y && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*

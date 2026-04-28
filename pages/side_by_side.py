@@ -66,6 +66,17 @@ Ensure the explanation is easy to read and effectively conveys the main points o
 st.title("Side-by-Side Comparison")
 st.caption("Compare model responses to the same prompt")
 
+# Sidebar: quick reset for content only (keeps model selections intact)
+def _clear_content():
+    st.session_state["comparison_content"] = ""
+
+with st.sidebar:
+    st.button(
+        "Clear Content",
+        on_click=_clear_content,
+        help="Clear the pasted content but keep your model selections"
+    )
+
 # Get config from session state
 queue_server_url = st.session_state.get("app.queue_server_url", "http://localhost:8001")
 config = st.session_state.get("app.model_config", {"models": {}})
